@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREM PGI Brand Package</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 70px 50px;
+    }
+
+    /* COVER */
+    .cover {
+      border-bottom: 3px solid #0a0a0a;
+      padding-bottom: 64px;
+      margin-bottom: 72px;
+    }
+
+    .brand-label {
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #0a0a0a;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 15px;
+      color: #777;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+    }
+
+    .meta {
+      margin-top: 48px;
+      display: flex;
+      gap: 56px;
+    }
+
+    .meta-item label {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #bbb;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .meta-item span {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 72px;
+    }
+
+    .section-label {
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #bbb;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      color: #0a0a0a;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    h3 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: none;
+      color: #0a0a0a;
+      margin-bottom: 14px;
+      margin-top: 36px;
+    }
+
+    p {
+      color: #444;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* POSITIONING PULL QUOTE */
+    .positioning-statement {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px;
+      line-height: 1.6;
+      color: #0a0a0a;
+      border-left: 4px solid #0a0a0a;
+      padding: 4px 0 4px 28px;
+      margin: 36px 0;
+    }
+
+    /* THREE WORDS */
+    .three-words {
+      display: flex;
+      margin: 32px 0;
+      border: 1px solid #e8e8e8;
+    }
+
+    .word-card {
+      flex: 1;
+      padding: 32px 28px;
+      border-right: 1px solid #e8e8e8;
+    }
+
+    .word-card:last-child { border-right: none; }
+
+    .word-card .word {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #0a0a0a;
+      margin-bottom: 14px;
+    }
+
+    .word-card p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #666;
+      margin: 0;
+    }
+
+    /* WE ARE / WE ARE NOT */
+    .contrast-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 13px;
+    }
+
+    .contrast-table th {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 14px 20px;
+      text-align: left;
+      border-bottom: 2px solid #0a0a0a;
+    }
+
+    .contrast-table th:first-child {
+      background: #0a0a0a;
+      color: #fff;
+      width: 50%;
+    }
+
+    .contrast-table th:last-child {
+      background: #f7f7f7;
+      color: #aaa;
+    }
+
+    .contrast-table td {
+      padding: 13px 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .contrast-table td:first-child {
+      font-weight: 500;
+      color: #0a0a0a;
+    }
+
+    .contrast-table td:last-child {
+      color: #aaa;
+    }
+
+    /* KEY PHRASES */
+    .phrase-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid #e8e8e8;
+      margin: 24px 0;
+    }
+
+    .phrase-item {
+      padding: 18px 22px;
+      border-bottom: 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+    }
+
+    .phrase-item:nth-child(even) { border-right: none; }
+    .phrase-item:nth-last-child(-n+2) { border-bottom: none; }
+
+    .phrase-item .phrase {
+      font-size: 13px;
+      font-weight: 500;
+      color: #0a0a0a;
+      line-height: 1.5;
+    }
+
+    /* AVOID LIST */
+    .avoid-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 24px 0;
+    }
+
+    .avoid-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px 16px;
+      background: #fafafa;
+      border-left: 3px solid #e0e0e0;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .avoid-x {
+      font-weight: 700;
+      color: #ccc;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* PLATFORM GRID */
+    .platform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .platform-card {
+      padding: 28px;
+      border: 1px solid #e8e8e8;
+    }
+
+    .platform-name {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #0a0a0a;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .platform-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .platform-card li {
+      font-size: 12px;
+      color: #666;
+      padding: 5px 0 5px 18px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .platform-card li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #ccc;
+    }
+
+    /* CONTENT PILLARS */
+    .pillar-list {
+      counter-reset: pillars;
+      list-style: none;
+      margin: 24px 0;
+      border: 1px solid #e8e8e8;
+    }
+
+    .pillar-list li {
+      counter-increment: pillars;
+      padding: 22px 28px 22px 72px;
+      border-bottom: 1px solid #e8e8e8;
+      position: relative;
+    }
+
+    .pillar-list li:last-child { border-bottom: none; }
+
+    .pillar-list li::before {
+      content: "0" counter(pillars);
+      position: absolute;
+      left: 24px;
+      font-size: 22px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #e8e8e8;
+      top: 20px;
+    }
+
+    .pillar-list li strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #0a0a0a;
+      margin-bottom: 5px;
+    }
+
+    .pillar-list li span {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    /* EXAMPLES */
+    .example-block {
+      margin: 20px 0 36px;
+    }
+
+    .example-label {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 7px 14px;
+      display: inline-block;
+    }
+
+    .example-label.on { background: #0a0a0a; color: #fff; }
+    .example-label.off { background: #f0f0f0; color: #aaa; }
+
+    .example-text {
+      padding: 22px 28px;
+      font-size: 13px;
+      line-height: 1.85;
+      color: #333;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 14px;
+    }
+
+    .example-text.on { border-left: 4px solid #0a0a0a; }
+    .example-text.off { border-left: 4px solid #e8e8e8; color: #aaa; }
+
+    .example-text strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* BIOS */
+    .bio-block {
+      background: #fafafa;
+      border: 1px solid #e8e8e8;
+      padding: 28px 32px;
+      margin: 20px 0;
+      font-size: 13px;
+      line-height: 1.85;
+      color: #444;
+    }
+
+    .bio-label {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #aaa;
+      margin-bottom: 14px;
+    }
+
+    .bio-block p { margin-bottom: 12px; font-size: 13px; }
+    .bio-block p:last-child { margin-bottom: 0; }
+
+    .bio-block ul {
+      padding-left: 18px;
+      margin: 8px 0 12px;
+    }
+
+    .bio-block ul li {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    /* FOOTER */
+    .doc-footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 11px;
+      color: #bbb;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* PRINT */
+    @media print {
+      body { padding: 40px 50px; }
+      section { page-break-inside: avoid; }
+      h2 { page-break-after: avoid; }
+      .three-words { page-break-inside: avoid; }
+      .platform-grid { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="brand-label">Brand Voice &amp; Positioning Package</div>
+    <h1>AUREM PGI</h1>
+    <div class="tagline">Predictive Governance Infrastructure™</div>
+    <div class="meta">
+      <div class="meta-item">
+        <label>Client</label>
+        <span>Camille Christiana</span>
+      </div>
+      <div class="meta-item">
+        <label>Prepared By</label>
+        <span>Innovator Edge</span>
+      </div>
+      <div class="meta-item">
+        <label>Date</label>
+        <span>April 2026</span>
+      </div>
+      <div class="meta-item">
+        <label>Status</label>
+        <span>For Client Review</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 01 POSITIONING -->
+  <section>
+    <div class="section-label">01 / Positioning</div>
+    <h2>The Core Idea</h2>
+
+    <p>Organizations make decisions quickly. Their financial impact is recognized too late. Despite investments in data, automation, and transformation, activity rarely converts into verified, lasting value.</p>
+
+    <div class="positioning-statement">
+      AUREM PGI is the decision infrastructure for boards and C-suite leaders who require clarity at the point of decision. It fuses finance, risk, and operations into a single governance layer that connects decisions directly to capital outcomes. AUREM PGI does not report on what happened. It governs what happens next.
+    </div>
+
+    <p>This is not a reporting overlay. It is not a traditional advisory model. It is a forward-looking infrastructure. Leaders gain clarity at the point of decision. Risk becomes visible before it materializes. Value is validated, not assumed.</p>
+
+    <h3>The Differentiator</h3>
+    <p>AUREM PGI ties every workflow to capital at stake rather than headcount reduction. Leadership sees margin, not throughput. This enables a shift from reactive management to predictive control. That distinction is the foundation of everything AUREM PGI communicates.</p>
+
+    <h3>For Whom</h3>
+    <p>Boards of directors. C-suite executives. Senior leadership teams. Governance, risk, and compliance professionals across audit, compliance, SOX, and SEC reporting. These are time-scarce, credibility-sensitive, outcome-accountable decision-makers. They do not respond to thought leadership that lacks specificity. They respond to infrastructure language, capital stakes framing, and defensible methodology.</p>
+  </section>
+
+
+  <!-- 02 BRAND VOICE -->
+  <section>
+    <div class="section-label">02 / Brand Voice</div>
+    <h2>Voice in Three Words</h2>
+
+    <div class="three-words">
+      <div class="word-card">
+        <div class="word">Authoritative</div>
+        <p>Every statement is earned. Positions are declared, not suggested. Language reflects mastery at the highest organizational levels. AUREM PGI does not equivocate on core premises. Authority is demonstrated through precision, not volume.</p>
+      </div>
+      <div class="word-card">
+        <div class="word">Innovative</div>
+        <p>AUREM PGI creates original frameworks and vocabulary. "Capital at Stake governors," "override latency windows," and "Predictive Governance Infrastructure" are not borrowed terms. They name what did not previously have a name.</p>
+      </div>
+      <div class="word-card">
+        <div class="word">Revolutionary</div>
+        <p>The shift from compliance-as-cost-center to governance-as-margin-protection is not incremental. AUREM PGI reframes the entire role of governance in enterprise value creation. This is the positioning and the promise.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 03 IDENTITY -->
+  <section>
+    <div class="section-label">03 / Identity</div>
+    <h2>We Are / We Are Not</h2>
+
+    <table class="contrast-table">
+      <thead>
+        <tr>
+          <th>AUREM PGI Is</th>
+          <th>AUREM PGI Is Not</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Decision infrastructure</td><td>A software product or dashboard</td></tr>
+        <tr><td>Forward-looking governance</td><td>Retrospective reporting</td></tr>
+        <tr><td>Capital-focused</td><td>Headcount or efficiency focused</td></tr>
+        <tr><td>Board-level precision</td><td>Mid-market generic advisory</td></tr>
+        <tr><td>Finance, risk, and operations fused</td><td>A single-function tool</td></tr>
+        <tr><td>Margin protection</td><td>Cost reduction</td></tr>
+        <tr><td>Predictive control</td><td>Reactive management</td></tr>
+        <tr><td>Intellectual infrastructure</td><td>Thought leadership theater</td></tr>
+        <tr><td>Third-person, structured, declarative</td><td>First-person, casual, conversational</td></tr>
+        <tr><td>Value validated</td><td>Value assumed</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- 04 TONE OF VOICE -->
+  <section>
+    <div class="section-label">04 / Tone of Voice</div>
+    <h2>How AUREM PGI Writes</h2>
+
+    <h3>The Overall Register</h3>
+    <p>Academic practitioner. The closest published equivalents are Harvard Business Review and McKinsey Quarterly: analytical, structured, financially grounded, and authoritative without being inaccessible. This is not content designed for engagement metrics. It is governance literature for decision-makers.</p>
+
+    <h3>Long-Form Structure</h3>
+    <p>Every article and long-form piece follows a consistent architecture that signals intellectual rigor:</p>
+    <ol style="padding-left: 28px; color: #555; font-size: 13px; line-height: 2.2; margin-top: 12px;">
+      <li>Open with the gap or the problem organizations fail to see.</li>
+      <li>Build the framework or concept that addresses it.</li>
+      <li>Apply the framework to observable business consequences.</li>
+      <li>Acknowledge tensions and counterarguments. <em style="color:#999;">(This is a credibility move, not a weakness.)</em></li>
+      <li>Close with board-level or capital-level implications.</li>
+    </ol>
+
+    <h3>Short-Form / Social Structure</h3>
+    <p>Compress the thesis to its sharpest point. Lead with the counterintuitive insight or the gap. Close with the capital or governance implication. No warm-up sentences. No personal pronouns. No casual language.</p>
+
+    <h3>Punctuation and Grammar Rules</h3>
+    <ul style="padding-left: 24px; color: #555; font-size: 13px; line-height: 2.3; margin-top: 8px;">
+      <li>Periods and colons only. No em dashes.</li>
+      <li>No exclamation marks. Exception: rare direct CTAs on Twitter/X only.</li>
+      <li>No personal pronouns: I, me, my, we, our, us. Always third person.</li>
+      <li>Active voice. Declarative sentences. No passive constructions.</li>
+      <li>No ellipses. No parenthetical asides in formal copy.</li>
+      <li>Always append ™ to "Predictive Governance Infrastructure" in published content.</li>
+    </ul>
+
+    <h3>A Note on Measured Hedging</h3>
+    <p>In long-form analytical and governance writing, measured hedging ("may," "can," "this suggests") signals intellectual honesty, not uncertainty. Acknowledging complexity is a credibility marker at the board and academic level. On social media, hedging is removed entirely and replaced with direct declarations.</p>
+  </section>
+
+
+  <!-- 05 KEY PHRASES -->
+  <section>
+    <div class="section-label">05 / Vocabulary</div>
+    <h2>Approved Key Phrases</h2>
+    <p>These phrases are core to AUREM PGI's identity. Use them as structural anchors in all content. Do not paraphrase them into softer language.</p>
+
+    <div class="phrase-grid">
+      <div class="phrase-item"><div class="phrase">Decision infrastructure</div></div>
+      <div class="phrase-item"><div class="phrase">Predictive Governance Infrastructure™</div></div>
+      <div class="phrase-item"><div class="phrase">Clarity at the point of decision</div></div>
+      <div class="phrase-item"><div class="phrase">Decision Defensibility at Board Level</div></div>
+      <div class="phrase-item"><div class="phrase">Shift from reactive management to predictive control</div></div>
+      <div class="phrase-item"><div class="phrase">From Policy to Capital Discipline</div></div>
+      <div class="phrase-item"><div class="phrase">Converting Foresight into Governed Performance</div></div>
+      <div class="phrase-item"><div class="phrase">Decisions withstand scrutiny. Outcomes remain measurable.</div></div>
+      <div class="phrase-item"><div class="phrase">Capital at stake</div></div>
+      <div class="phrase-item"><div class="phrase">If value cannot be clearly identified, quantified, and governed, it cannot be relied upon.</div></div>
+    </div>
+
+    <h3>Proprietary Framework Vocabulary</h3>
+    <p>The following terms are original to AUREM PGI. They represent intellectual property and should be treated as such in all published content.</p>
+
+    <div class="phrase-grid">
+      <div class="phrase-item"><div class="phrase">Capital at Stake (CtAS) governors</div></div>
+      <div class="phrase-item"><div class="phrase">Override latency windows</div></div>
+      <div class="phrase-item"><div class="phrase">Decision defensibility metrics</div></div>
+      <div class="phrase-item"><div class="phrase">Exception-handling SLAs as governance KPIs</div></div>
+    </div>
+  </section>
+
+
+  <!-- 06 GUARDRAILS -->
+  <section>
+    <div class="section-label">06 / Guardrails</div>
+    <h2>What to Avoid</h2>
+
+    <div class="avoid-list">
+      <div class="avoid-item"><span class="avoid-x">×</span> Em dashes. Use periods or colons instead.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Personal pronouns: I, me, my, we, our, us.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Slang, casual phrases, or colloquial language.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Humor or sarcasm of any kind.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Exclamation marks (except rare Twitter/X CTAs).</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Competitor names. Describe the gap instead.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Overly emotional or empathy-first language.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Political or social commentary.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Buzzwords without substance: synergy, leverage, game-changer.</div>
+      <div class="avoid-item"><span class="avoid-x">×</span> Emojis (except Twitter: 📊 or 💼, once per week maximum).</div>
+    </div>
+  </section>
+
+
+  <!-- 07 PLATFORM STRATEGY -->
+  <section>
+    <div class="section-label">07 / Platform Strategy</div>
+    <h2>Voice by Platform</h2>
+
+    <div class="platform-grid">
+      <div class="platform-card">
+        <div class="platform-name">LinkedIn</div>
+        <ul>
+          <li>Primary platform. Highest priority.</li>
+          <li>Short-form posts: 150-250 words. 3-5 declarative statements or a tight structured insight.</li>
+          <li>Long-form articles: formal, analytical, full academic-practitioner register.</li>
+          <li>No emojis. Maximum 3 hashtags if used.</li>
+          <li>Every post anchors to capital outcomes or governance frameworks.</li>
+          <li>Suggested frequency: 3-4 posts per week.</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <div class="platform-name">Twitter / X</div>
+        <ul>
+          <li>Secondary platform. Compressed authority.</li>
+          <li>1-2 declarative sentences only.</li>
+          <li>Single approved emoji (📊 or 💼) once per week maximum.</li>
+          <li>Extract the sharpest thesis from a longer piece.</li>
+          <li>Exclamation marks permitted on direct CTAs only, sparingly.</li>
+          <li>Suggested frequency: 3-5 posts per week.</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <div class="platform-name">Threads</div>
+        <ul>
+          <li>Institutional presence only.</li>
+          <li>Mirror LinkedIn brevity. 1-3 sentences.</li>
+          <li>No emojis. No casual tone.</li>
+          <li>Repurpose compressed LinkedIn content.</li>
+          <li>Declarative only.</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <div class="platform-name">Website</div>
+        <ul>
+          <li>Highest formality. Clinical authority.</li>
+          <li>Every section answers: why does this matter to capital outcomes?</li>
+          <li>No warm welcome language. No generic hero copy.</li>
+          <li>Headers as positioning statements. Body as evidence.</li>
+          <li>Long-form articles: full academic-practitioner register.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 08 CONTENT PILLARS -->
+  <section>
+    <div class="section-label">08 / Content Pillars</div>
+    <h2>What AUREM PGI Talks About</h2>
+
+    <ul class="pillar-list">
+      <li>
+        <strong>Decision Infrastructure</strong>
+        <span>The core concept. What it means. Why legacy governance frameworks fail to deliver it. How AUREM PGI closes the gap between decision speed and financial visibility.</span>
+      </li>
+      <li>
+        <strong>Capital at Stake</strong>
+        <span>Connecting governance and operational decisions directly to financial outcomes. Margin versus throughput. Capital exposure at the decision level. Every workflow tied to what it costs.</span>
+      </li>
+      <li>
+        <strong>Predictive Control</strong>
+        <span>The shift from reactive management to forward-looking governance. Risk visible before it materializes. Foresight converted into measurable, sustained performance.</span>
+      </li>
+      <li>
+        <strong>Board and C-Suite Governance</strong>
+        <span>Content positioned specifically for board-level readers. Fiduciary responsibility, regulatory context, decision defensibility, and the financial consequences of governance structure.</span>
+      </li>
+      <li>
+        <strong>Original Frameworks and IP</strong>
+        <span>Published concepts: CtAS governors, override latency windows, exception-handling SLAs as governance KPIs. Intellectual authority demonstrated through proprietary vocabulary that did not exist before AUREM PGI named it.</span>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- 09 WRITING EXAMPLES -->
+  <section>
+    <div class="section-label">09 / Voice in Practice</div>
+    <h2>Writing Examples</h2>
+
+    <h3>LinkedIn Post</h3>
+    <div class="example-block">
+      <div class="example-label on">On Brand</div>
+      <div class="example-text on">
+        Exception-handling queues are not an IT problem. They are a capital exposure problem.<br><br>
+        Every unresolved exception represents a deferred decision. Every deferred decision has a cost: delayed revenue recognition, increased operational overhead, or elevated regulatory risk. Most governance frameworks track volume. None price the delay.<br><br>
+        AUREM PGI treats latency as a financial variable. Override latency windows are measurable. Their capital consequences are quantifiable. Boards that understand this distinction shift governance from a compliance cost center to a margin protection asset.<br><br>
+        Decisions withstand scrutiny. Outcomes remain measurable.
+      </div>
+      <div class="example-label off">Off Brand</div>
+      <div class="example-text off">
+        We're so excited to share our latest thinking on governance! 🙌 In today's fast-paced world, companies are really struggling to keep up with changes in risk management. That's why we built AUREM PGI — to help your team stay ahead of the curve! Let us know in the comments what challenges you're facing. We'd love to connect! #GRC #RiskManagement #Governance #Leadership #Innovation
+      </div>
+    </div>
+
+    <h3>Twitter / X Post</h3>
+    <div class="example-block">
+      <div class="example-label on">On Brand</div>
+      <div class="example-text on">
+        Governance that cannot connect a decision to a capital outcome is not governance. It is documentation. That is the gap AUREM PGI closes. 📊
+      </div>
+      <div class="example-label off">Off Brand</div>
+      <div class="example-text off">
+        Our team works hard every day to make governance easier for everyone! So excited to be part of this important conversation. #governance #risk #compliance #fintech #leadership #innovation #GRC
+      </div>
+    </div>
+
+    <h3>Website Opening Copy</h3>
+    <div class="example-block">
+      <div class="example-label on">On Brand</div>
+      <div class="example-text on">
+        <strong>The gap is not data. The gap is governance.</strong>
+        Organizations invest in dashboards, automation, and transformation. Activity increases. Financial clarity does not. Decisions are made quickly. Their consequences surface too late to prevent them.<br><br>
+        AUREM PGI establishes the governance layer that closes this gap. Finance, risk, and operations are fused into a single infrastructure. Every decision connects to capital at stake. Every outcome is traceable, defensible, and measurable.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 10 APPROVED BIOS -->
+  <section>
+    <div class="section-label">10 / Approved Bios</div>
+    <h2>Platform Bios</h2>
+
+    <h3>LinkedIn Bio</h3>
+    <div class="bio-block">
+      <div class="bio-label">LinkedIn — Full Bio</div>
+      <p>Camille Christiana | Founder, AUREM PGI (Predictive Governance Infrastructure™)</p>
+      <p>AUREM PGI addresses a critical gap in modern enterprises. Decisions are made quickly. Their financial impact is recognized too late. Organizations struggle to convert activity into verified, lasting value despite investments in data, automation, and transformation.</p>
+      <p>AUREM PGI creates a governance layer that links decisions directly to financial outcomes. This is not a reporting overlay. It is a forward-looking infrastructure. Leaders act with precision supported by measurable and defensible insights.</p>
+      <p>Core positioning: Decision infrastructure first. Finance, risk, and operations fused. Every workflow tied to capital at stake, not headcount reduction. Leadership sees margin, not throughput.</p>
+      <p>What AUREM PGI delivers:</p>
+      <ul>
+        <li>Clarity at the point of decision</li>
+        <li>Risk visible before it materializes</li>
+        <li>Value validated, not assumed</li>
+        <li>Shift from reactive management to predictive control</li>
+      </ul>
+      <p>For whom: Boards, C-suite, senior leadership, and governance professionals (audit, compliance, SOX, SEC reporting).</p>
+      <p>Trademark and copyright pending for Predictive Governance Infrastructure™. Published works by Camille Christiana available on request.</p>
+      <p>Decision defensibility at board level. From policy to capital discipline.</p>
+    </div>
+
+    <h3>LinkedIn Headline (Recommended)</h3>
+    <div class="bio-block">
+      <div class="bio-label">LinkedIn — Headline</div>
+      <p>Decision Defensibility at Board Level | From Policy to Capital Discipline | AUREM PGI</p>
+    </div>
+
+    <h3>Twitter / X Bio</h3>
+    <div class="bio-block">
+      <div class="bio-label">Twitter / X</div>
+      <p>Clarity at the point of decision. Converting foresight into governed performance. Decision Defensibility at Board Level. From Policy to Capital Discipline. AUREM PGI.</p>
+    </div>
+
+    <h3>Threads Bio</h3>
+    <div class="bio-block">
+      <div class="bio-label">Threads</div>
+      <p>Decision infrastructure for boards. Finance + risk + operations. Predictive Governance Infrastructure™. AUREM PGI.</p>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <span>AUREM PGI Brand Package — Confidential. For Client Review Only.</span>
+    <span>Prepared by Innovator Edge · April 2026</span>
+  </div>
+
+</body>
+</html>

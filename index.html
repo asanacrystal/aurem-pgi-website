@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREM PGI | Predictive Governance Infrastructure™</title>
+  <meta name="description" content="AUREM PGI converts enterprise foresight into governed performance. Predictive Governance Infrastructure™ for finance, risk, strategy, and decision accountability at scale.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/index.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="AUREM PGI | Predictive Governance Infrastructure™">
+  <meta property="og:description" content="AUREM PGI converts enterprise foresight into governed performance. Predictive Governance Infrastructure™ for finance, risk, strategy, and decision accountability at scale.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/index.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AUREM PGI | Predictive Governance Infrastructure™">
+  <meta name="twitter:description" content="AUREM PGI converts enterprise foresight into governed performance. Predictive Governance Infrastructure™ for finance, risk, strategy, and decision accountability at scale.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AUREM PGI",
+    "legalName": "AUREM Predictive Governance Infrastructure™",
+    "url": "https://aurem-pgi.vercel.app",
+    "logo": "https://aurem-pgi.vercel.app/logo.png",
+    "description": "AUREM PGI is a Predictive Governance Infrastructure™ designed to convert enterprise foresight into governed performance across finance, risk, strategy, and decision accountability.",
+    "founder": { "@type": "Person", "name": "Camille Christiana" }
+  }
+  </script>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ─── Homepage Specific ────────────────────────────── */
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--nav-h) + 6rem) 3rem 6rem;
+      overflow: hidden;
+      background: var(--navy-deep);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('globe.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      animation: kenBurns 24s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
+    @keyframes kenBurns {
+      0%   { transform: scale(1.15) translate(0%, 0%); }
+      50%  { transform: scale(1.21) translate(-1%, 0.5%); }
+      100% { transform: scale(1.18) translate(1%, -0.5%); }
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(8,16,42,0.97) 0%, rgba(8,16,42,0.88) 32%, rgba(8,16,42,0.45) 62%, rgba(6,12,32,0.15) 100%),
+        linear-gradient(to bottom, rgba(8,16,42,0.3) 0%, transparent 20%, transparent 80%, rgba(8,16,42,0.5) 100%);
+    }
+
+    .hero-grid-overlay {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(196,162,77,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(196,162,77,0.04) 1px, transparent 1px);
+      background-size: 72px 72px;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-eyebrow::before { content: ''; display: block; width: 36px; height: 1px; background: var(--gold); }
+
+    .hero h1 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      color: var(--white);
+    }
+
+    .hero-divider {
+      width: 36px; height: 1px;
+      background: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.6);
+      max-width: 540px;
+      margin-bottom: 3rem;
+    }
+
+    .hero-actions { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+
+    .hero-scroll {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* Hero Quote Card */
+    .hero-card {
+      border: 1px solid rgba(196,162,77,0.25);
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(12px);
+      padding: 2.5rem;
+      position: relative;
+      animation: cardGlow 6s ease-in-out infinite;
+    }
+
+    @keyframes cardGlow {
+      0%, 100% { border-color: rgba(196,162,77,0.2); box-shadow: none; }
+      50% { border-color: rgba(196,162,77,0.45); box-shadow: 0 0 24px rgba(196,162,77,0.1); }
+    }
+
+    .hero-card-bar {
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), transparent);
+    }
+
+    .hero-card-kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-card-quote {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-card-attr {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* Marquee */
+    .marquee-strip {
+      background: var(--white);
+      border-top: 1px solid var(--g200);
+      border-bottom: 1px solid var(--g200);
+      padding: 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      animation: marquee 32s linear infinite;
+    }
+
+    .marquee-item {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--navy);
+      padding: 1rem 3rem;
+    }
+
+    .marquee-item::after {
+      content: '·';
+      margin-left: 3rem;
+      color: var(--gold);
+    }
+
+    .marquee-track:hover { animation-play-state: paused; }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* Pillars */
+    .pillars {
+      padding: 7rem 3rem;
+      background: var(--white);
+    }
+
+    .pillars-inner { max-width: 1440px; margin: 0 auto; }
+
+    .pillars-header { max-width: 700px; margin-bottom: 4rem; }
+    .pillars-header .section-label { font-size: 0.8rem; letter-spacing: 0.28em; }
+
+    .pillars-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-top: 0.75rem;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--g200);
+      border: 1px solid var(--g200);
+    }
+
+    .pillar {
+      background: var(--white);
+      padding: 3rem 2rem;
+      transition: background 0.25s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pillar:hover { background: var(--g50); }
+
+    .pillar-icon-wrap {
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(196,162,77,0.6);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .pillar-icon-wrap svg {
+      width: 26px; height: 26px;
+      stroke: var(--gold); fill: none; stroke-width: 1.5;
+    }
+
+    .pillar h3 {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .pillar p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: var(--g600);
+      line-height: 1.75;
+      text-align: center;
+    }
+
+    /* Who It's For */
+    .who {
+      background: var(--white);
+      padding: 0;
+      overflow: hidden;
+      border-top: 1px solid var(--g200);
+    }
+
+    .who-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+      padding: 7rem 3rem;
+    }
+
+    .who-left .section-label { color: var(--gold); }
+    .who-left .section-label::before { background: var(--gold); }
+
+    .who-left h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--navy);
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    .who-left p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--g600);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .who-bold {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .audience-list { list-style: none; }
+
+    .audience-item {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--g200);
+    }
+
+    .audience-item:last-child { border-bottom: none; }
+
+    .aud-circle {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .aud-circle svg {
+      width: 22px; height: 22px;
+      stroke: var(--gold); fill: none; stroke-width: 1.5;
+    }
+
+    .aud-content { flex: 1; }
+
+    .aud-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+    }
+
+    .aud-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--g400);
+    }
+
+    .aud-link-arrow { color: var(--navy); opacity: 0.35; flex-shrink: 0; }
+
+    /* Who Bottom Strip */
+    .who-strip {
+      background: var(--navy-deep);
+      padding: 2rem 3rem;
+    }
+
+    .who-strip-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .who-strip-left {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex: 1;
+    }
+
+    .who-strip-icon svg {
+      width: 38px; height: 38px;
+      stroke: var(--gold); fill: none; stroke-width: 1.2;
+    }
+
+    .who-strip-text {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--white);
+      line-height: 1.9;
+    }
+
+    .who-strip-divider {
+      width: 1px; height: 56px;
+      background: rgba(255,255,255,0.15);
+      flex-shrink: 0;
+    }
+
+    .who-strip-right { flex: 1; }
+
+    .who-strip-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .who-strip-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Core Positioning */
+    .positioning {
+      padding: 0;
+      background: var(--g50);
+      border-top: 1px solid var(--g200);
+    }
+
+    .positioning-header {
+      padding: 6rem 3rem 4rem;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .positioning-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500 !important;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--navy);
+      margin: 0.75rem 0 1.75rem;
+      max-width: 700px;
+    }
+
+    .positioning-header p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--g600);
+      line-height: 1.85;
+      max-width: 660px;
+      margin-bottom: 1rem;
+    }
+
+    .pos-tagline {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--g200);
+    }
+
+    .pos-tagline-icon svg {
+      width: 56px; height: 56px;
+      stroke: var(--gold); fill: none; stroke-width: 1.5;
+    }
+
+    .pos-tagline-text {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+    }
+
+    .positioning-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(196,162,77,0.10) 0%, transparent 70%),
+        linear-gradient(180deg, #0e1a40 0%, #090f28 55%, #04081a 100%);
+    }
+
+    .pos-block {
+      background: transparent;
+      padding: 3.5rem 3rem;
+      position: relative;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .pos-block:last-child { border-right: none; }
+    .pos-block:hover { background: rgba(255,255,255,0.03); transition: background 0.2s; }
+
+    .pos-icon {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      border: 1px solid rgba(196,162,77,0.4);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .pos-icon svg {
+      width: 44px; height: 44px;
+      stroke: var(--gold); fill: none; stroke-width: 1.5;
+    }
+
+    .pos-kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .pos-block h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .pos-block p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.85;
+    }
+
+    .pos-bottom-tagline {
+      background: linear-gradient(180deg, #04081a 0%, #03060f 100%);
+      padding: 1.5rem 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .pos-bottom-tagline-icon svg {
+      width: 24px; height: 24px;
+      stroke: var(--gold); fill: none; stroke-width: 1.5;
+      flex-shrink: 0;
+    }
+
+    .pos-bottom-tagline-text {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Forum Preview */
+    .forum-preview {
+      padding: 7rem 3rem;
+      background: var(--white);
+    }
+
+    .forum-preview-inner { max-width: 1440px; margin: 0 auto; }
+
+    .forum-preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .forum-preview-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-top: 0.75rem;
+    }
+
+    /* Closing CTA */
+    .cta-band {
+      background-image: url('https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&w=1600&h=700&fit=crop&auto=format&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 7rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-band::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(8,16,42,0.90) 0%,
+        rgba(12,23,56,0.84) 50%,
+        rgba(8,16,42,0.92) 100%
+      );
+    }
+
+    .cta-band-inner { max-width: 720px; margin: 0 auto; position: relative; }
+
+    .cta-line {
+      width: 1px; height: 64px;
+      background: linear-gradient(to bottom, transparent, var(--gold) 50%, transparent);
+      margin: 0 auto 4rem;
+      animation: ctaPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes ctaPulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .cta-band h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.45;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-band-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 3.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .pillars-grid { grid-template-columns: 1fr 1fr 1fr; }
+      .positioning-cards { grid-template-columns: 1fr; }
+      .who-inner { grid-template-columns: 1fr; gap: 4rem; }
+      .who-strip-inner { flex-direction: column; gap: 2rem; align-items: flex-start; }
+      .who-strip-divider { width: 60px; height: 1px; }
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: calc(var(--nav-h) + 3rem) 1.5rem 4rem; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .pillars { padding: 5rem 1.5rem; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .who-inner { padding: 4rem 1.5rem; }
+      .who-strip { padding: 2rem 1.5rem; }
+      .positioning-header { padding: 4rem 1.5rem; }
+      .pos-bottom-tagline { padding: 1.5rem; }
+      .forum-preview { padding: 5rem 1.5rem; }
+      .cta-band { padding: 5rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html">Governance</a>
+            <a href="risk.html">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li><li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a>
+    <a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a>
+    <a href="finance.html" class="mob-sub">Finance</a>
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a>
+    <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow fi">Predictive Governance Infrastructure™</div>
+        <h1 class="fi d1">Governed Intelligence Aligns Margin with Measurable Outcomes</h1>
+        <div class="hero-divider fi d1"></div>
+        <p class="hero-sub fi d2">AUREM PGI converts decision activity into measurable financial outcomes by governing capital exposure, decision timing, and accountability at scale.</p>
+        <div class="hero-actions fi d3">
+          <a href="case-studies.html" class="btn-primary">Case Studies / Pilot Implementations&nbsp;&rarr;</a>
+          <a href="business-forum.html" class="btn-outline">&#9654; Business Forum</a>
+        </div>
+      </div>
+      <div class="hero-card fi d4">
+        <div class="hero-card-bar"></div>
+        <img src="logo-transparent.png" alt="AUREM PGI" style="height:36px; width:auto; margin-bottom:1.25rem; opacity:0.75; filter: brightness(0) invert(1);">
+        <div class="hero-card-kicker">Core Tenets</div>
+        <ul style="list-style:none;margin:0 0 1.5rem;padding:0;display:flex;flex-direction:column;gap:0.55rem;">
+          <li style="font-family:'Inter',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;display:inline-block;"></span>Capital at Stake governs priority</li>
+          <li style="font-family:'Inter',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;display:inline-block;"></span>Latency Exposure defines timing</li>
+          <li style="font-family:'Inter',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;display:inline-block;"></span>Decision Defensibility ensures accountability</li>
+        </ul>
+        <div class="hero-card-quote">"If value cannot be clearly identified, quantified and governed it can not be relied upon"</div>
+        <div class="hero-card-attr" style="font-style:italic; letter-spacing:0.04em;">— Camille Christiana</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Marquee -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Decision Infrastructure</span>
+      <span class="marquee-item">Capital at Stake</span>
+      <span class="marquee-item">Clarity at the Point of Decision</span>
+      <span class="marquee-item">Predictive Control</span>
+      <span class="marquee-item">Decision Defensibility at Board Level</span>
+      <span class="marquee-item">From Policy to Capital Discipline</span>
+      <span class="marquee-item">Converting Foresight into Governed Performance</span>
+      <span class="marquee-item">Value Validated. Not Assumed.</span>
+      <span class="marquee-item">Decision Infrastructure</span>
+      <span class="marquee-item">Capital at Stake</span>
+      <span class="marquee-item">Clarity at the Point of Decision</span>
+      <span class="marquee-item">Predictive Control</span>
+      <span class="marquee-item">Decision Defensibility at Board Level</span>
+      <span class="marquee-item">From Policy to Capital Discipline</span>
+      <span class="marquee-item">Converting Foresight into Governed Performance</span>
+      <span class="marquee-item">Value Validated. Not Assumed.</span>
+    </div>
+  </div>
+
+
+  <!-- Pillars -->
+  <section class="pillars">
+    <div class="pillars-inner">
+      <div class="pillars-header">
+        <div class="section-label fi">What We Deliver</div>
+        <h2 class="fi d1" style="font-size:clamp(1.7rem,2.6vw,2.8rem);font-weight:500;letter-spacing:-0.01em;line-height:1.25;">Three Financial Control Governed Intelligence</h2>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar fi">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+          </div>
+          <h3>Capital at Stake</h3>
+          <p>Every decision is evaluated based on financial exposure and prioritized accordingly.</p>
+        </div>
+        <div class="pillar fi d1">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Latency Exposure</h3>
+          <p>Decision timing is measured and managed as a financial variable.</p>
+        </div>
+        <div class="pillar fi d2">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Decision Defensibility</h3>
+          <p>Every decision is traceable, owned, and financially justified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Who It's For -->
+  <section class="who">
+    <div class="who-inner">
+      <div class="who-left fi">
+        <div class="section-label">Who It's For</div>
+        <h2>Built for Leaders Accountable for Enterprise Outcomes</h2>
+        <p>The challenge is not access to information. It is the ability to distinguish signal from noise, act with confidence under uncertainty, and ensure outcomes are measurable and defensible.</p>
+        <p>Most organizations struggle not with access to data, but with controlling how decisions translate into financial outcomes under uncertainty and scale.</p>
+        <p class="who-bold">AUREM PGI delivers governance structure that scales with complexity and aligns directly with financial accountability.</p>
+      </div>
+      <ul class="audience-list fi d1">
+        <li class="audience-item">
+          <div class="aud-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>
+          </div>
+          <div class="aud-content">
+            <div class="aud-title">Boards of Directors</div>
+            <div class="aud-sub">Fiduciary responsibility. Regulatory context. Decision defensibility.</div>
+          </div>
+          <span class="aud-link-arrow">→</span>
+        </li>
+        <li class="audience-item">
+          <div class="aud-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="aud-content">
+            <div class="aud-title">C-Suite Executives</div>
+            <div class="aud-sub">Capital allocation. Risk visibility. Predictive control.</div>
+          </div>
+          <span class="aud-link-arrow">→</span>
+        </li>
+        <li class="audience-item">
+          <div class="aud-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <div class="aud-content">
+            <div class="aud-title">Senior Leadership</div>
+            <div class="aud-sub">Outcome accountability. Financial consequence at the decision level.</div>
+          </div>
+          <span class="aud-link-arrow">→</span>
+        </li>
+        <li class="audience-item">
+          <div class="aud-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="aud-content">
+            <div class="aud-title">Governance, Risk &amp; Compliance</div>
+            <div class="aud-sub">Audit, compliance, SOX, SEC reporting. Infrastructure, not overhead.</div>
+          </div>
+          <span class="aud-link-arrow">→</span>
+        </li>
+      </ul>
+    </div>
+    <div class="who-strip fi">
+      <div class="who-strip-inner">
+        <div class="who-strip-left">
+          <div class="who-strip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <div class="who-strip-text">Confidence comes from governance<br>Governance comes from design</div>
+        </div>
+        <div class="who-strip-divider"></div>
+        <div class="who-strip-right">
+          <div class="who-strip-label">Outcomes You Can Defend</div>
+          <div class="who-strip-desc">Clarity for leaders. Control for organizations. Value that lasts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Core Positioning -->
+  <section class="positioning">
+    <div class="positioning-header fi">
+      <div class="section-label">Core Positioning</div>
+      <h2>Decision Infrastructure for Leaders Accountable to Outcomes</h2>
+      <p>AUREM PGI establishes a governance layer that connects decisions directly to capital outcomes. It integrates finance, risk, and operations into a unified system where every action carries measurable consequence.</p>
+      <p>Leaders operate with clarity at the point of action, supported by structure that ensures accountability, traceability, and control.</p>
+      <p>Decisions are evaluated in real time against exposure, not after outcomes are realized. The organization moves with precision, backed by evidence rather than assumption.</p>
+      <div class="pos-tagline">
+        <div class="pos-tagline-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <div class="pos-tagline-text">Governance directs outcomes before they are realized</div>
+      </div>
+    </div>
+    <div class="positioning-cards">
+      <div class="pos-block fi">
+        <div class="pos-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="pos-kicker">Finance</div>
+        <h3>Capital at Stake</h3>
+        <p>Financial exposure determines decision priority and control level.</p>
+      </div>
+      <div class="pos-block fi d1">
+        <div class="pos-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="pos-kicker">Risk</div>
+        <h3>Latency Exposure</h3>
+        <p>Delay in decision execution directly impacts financial outcomes.</p>
+      </div>
+      <div class="pos-block fi d2">
+        <div class="pos-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="pos-kicker">Governance</div>
+        <h3>Decision Defensibility</h3>
+        <p>Decisions are traceable, owned, and aligned to financial accountability.</p>
+      </div>
+    </div>
+    <div class="pos-bottom-tagline fi">
+      <div class="pos-bottom-tagline-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      </div>
+      <div class="pos-bottom-tagline-text">Every decision carries consequence. Governance ensures it is understood.</div>
+    </div>
+  </section>
+
+
+  <!-- Business Forum Preview -->
+  <section class="forum-preview">
+    <div class="forum-preview-inner">
+      <div class="forum-preview-header fi">
+        <div>
+          <h2>Latest from the Business Forum</h2>
+        </div>
+        <a href="business-forum.html" class="btn-ghost">View All Articles &rarr;</a>
+      </div>
+      <div class="article-grid">
+        <article class="article-card fi">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1774186184398-1cc2da3d029e?ixlib=rb-4.1.0&w=800&h=400&fit=crop&auto=format&q=80" alt="Boardroom">
+          </div>
+          <div class="article-body">
+            <div class="article-cat">Governance</div>
+            <h3>Decision-Defensibility at Board Level: From Policy to Capital Discipline</h3>
+            <p>Governance linked to capital discipline, where decisions are evaluated for traceability, timing, and financial exposure.</p>
+            <div class="article-meta">By Camille Christiana &nbsp;|&nbsp; April 2026</div>
+            <button class="btn-ghost" onclick="openArticle('article1')">Read Article &rarr;</button>
+          </div>
+        </article>
+        <article class="article-card fi d1">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?ixlib=rb-4.1.0&w=800&h=400&fit=crop&auto=format&q=80" alt="Data Analytics">
+          </div>
+          <div class="article-body">
+            <div class="article-cat">Governance</div>
+            <h3>Exception-Handling SLAs: The Hidden Governance KPI CFOs Overlook</h3>
+            <p>Override latency is a financial variable — its consequences are quantifiable. SLAs as governance infrastructure.</p>
+            <div class="article-meta">By Camille Christiana &nbsp;|&nbsp; April 2026</div>
+            <button class="btn-ghost" onclick="openArticle('article2')">Read Article &rarr;</button>
+          </div>
+        </article>
+        <article class="article-card fi d2">
+          <div class="article-thumb" style="background: var(--navy); height: 200px; display:flex; align-items:center; justify-content:center;">
+            <div style="font-family:'Barlow',sans-serif; font-size:0.65rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(196,162,77,0.5);">Coming Soon</div>
+          </div>
+          <div class="article-body">
+            <div class="article-cat">Risk</div>
+            <h3>Capital Exposure and the Governance of Automated Decision Systems</h3>
+            <p>As automation scales, the speed of decision-making outpaces traditional oversight. A new governance model is required.</p>
+            <div class="article-meta">By Camille Christiana &nbsp;|&nbsp; Coming Soon</div>
+            <span style="font-size:0.75rem; color:var(--g400); font-style:italic;">Publication pending</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Closing CTA -->
+  <section class="cta-band">
+    <div class="cta-band-inner">
+      <div class="cta-line fi"></div>
+      <h2 class="fi d1">"In environments where decisions are made rapidly and at scale, governance determines whether value is created, preserved, or lost."</h2>
+      <p class="cta-band-sub fi d2">Decisions withstand scrutiny. Outcomes remain measurable.</p>
+      <a href="contact.html" class="btn-primary fi d3">Request Access</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-transparent.png" alt="AUREM PGI">
+          <div class="footer-tagline">Converting Foresight into Governed Performance</div>
+          <div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="governance.html">Governance</a>
+          <a href="risk.html">Risk</a>
+          <a href="ai-automation.html">AI &amp; Automation</a>
+          <a href="finance.html">Finance</a>
+          
+
+          <a href="strategy.html">Strategy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a>
+          <a href="contact.html">Request Access</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Article Modals -->
+  <div class="article-overlay" id="article1">
+    <div class="article-modal">
+      <div class="article-modal-hero">
+        <img src="https://images.unsplash.com/photo-1774186184398-1cc2da3d029e?ixlib=rb-4.1.0&w=1200&h=500&fit=crop&auto=format&q=85" alt="Boardroom">
+        <div class="article-modal-hero-overlay"></div>
+        <img src="logo-transparent.png" alt="AUREM PGI" class="article-modal-hero-logo">
+        <button class="article-modal-close" onclick="closeArticle('article1')">&#x2715;</button>
+      </div>
+      <div class="article-modal-body">
+        <div class="article-modal-cat">Governance &nbsp;|&nbsp; April 16, 2026</div>
+        <h2 class="article-modal-title">Decision-Defensibility at Board Level: From Policy to Capital Discipline</h2>
+        <div class="article-modal-meta">By Camille Christiana &nbsp;|&nbsp; AUREM Predictive Governance Infrastructure™</div>
+        <p class="article-modal-intro">Boards have traditionally treated governance as a control function. This position reframes it: governance linked to capital discipline, where decisions are evaluated for traceability, timing, and financial exposure. The primary concern is now whether decisions based on policy can withstand financial scrutiny in practice.</p>
+        <div class="article-modal-section-title">Reframing Governance Through Financial Consequences</div>
+        <p>In many organizations, governance frameworks focus on procedural completeness: documenting policies, testing controls, and maintaining audit trails. However, these measures do not always ensure economically sound decisions. Policies may be followed precisely, yet financially adverse outcomes can still result from delays, misclassification, or unclear ownership.</p>
+        <p>This creates an asymmetry for boards: financial statements show outcomes, while governance systems often focus on process adherence. Decision defensibility metrics address this gap by aligning governance evaluation with financial outcomes — shifting focus to whether the decision can be justified in terms of capital exposure, timing, and accountability.</p>
+        <div class="article-modal-section-title">Decision Defensibility as a Measurable Construct</div>
+        <p>Three central dimensions emerge:</p>
+        <ul class="article-modal-list">
+          <li><strong>Traceability:</strong> links each decision to specific inputs, rules, and ownership.</li>
+          <li><strong>Timing:</strong> measures the delay between signal detection and decision execution, which can have direct financial effects.</li>
+          <li><strong>Exposure:</strong> quantifies the decision's potential or actual impact on capital, including cost, revenue, or risk.</li>
+        </ul>
+        <p>When these dimensions are applied, governance shifts from a retrospective control to a forward-looking financial tool. Decisions are evaluated in real time, considering their potential capital implications.</p>
+        <div class="article-modal-section-title">Capital at Stake Governors and the Logic of Thresholds</div>
+        <p>CtAS governors act as threshold mechanisms, classifying decisions by their potential capital impact. When a decision exceeds a set threshold, additional controls such as human review, escalation, or suspension may be triggered. This mirrors financial risk management practices that use exposure limits and stop-loss mechanisms to contain risk.</p>
+        <p>For boards, CtAS governors create a clearer link between governance and capital allocation, enabling oversight through ongoing monitoring of decision-level exposure — not just policy approval.</p>
+        <div class="article-modal-section-title">Observable Business Consequences</div>
+        <p>Exception handling queues often represent deferred decisions due to complexity or unclear ownership. A defensibility-based approach treats these queues as indicators of latent capital exposure. Metrics are developed to estimate the financial cost of delay, incorporating factors such as time, volume, and potential error rates. This allows leadership to prioritize interventions based on economic significance rather than purely operational criteria.</p>
+        <div class="article-modal-section-title">Toward Governance as a Margin Protection Mechanism</div>
+        <p>Shifting governance from a compliance cost center to a margin protection asset requires practical tools, metrics, and processes that embed financial discipline in decision-making. What appears increasingly evident is that governance cannot remain isolated from financial considerations. Boards may need to reconsider how governance is framed — recognizing its role in safeguarding enterprise value.</p>
+        <p>Governance should be seen not as an external constraint, but as an internal capability that helps organizations navigate uncertainty with precision and accountability.</p>
+        <div class="article-modal-copyright">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™ and all related terms are original works. Brief quotation with citation is allowed; any other use requires written permission. Trademark registration pending with the United States Patent and Trademark Office.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-overlay" id="article2">
+    <div class="article-modal">
+      <div class="article-modal-hero">
+        <img src="https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?ixlib=rb-4.1.0&w=1200&h=500&fit=crop&auto=format&q=85" alt="Data Analytics">
+        <div class="article-modal-hero-overlay"></div>
+        <img src="logo-transparent.png" alt="AUREM PGI" class="article-modal-hero-logo">
+        <button class="article-modal-close" onclick="closeArticle('article2')">&#x2715;</button>
+      </div>
+      <div class="article-modal-body">
+        <div class="article-modal-cat">Governance &nbsp;|&nbsp; April 16, 2026</div>
+        <h2 class="article-modal-title">Exception-Handling SLAs: The Hidden Governance KPI CFOs Overlook</h2>
+        <div class="article-modal-meta">By Camille Christiana &nbsp;|&nbsp; AUREM Predictive Governance Infrastructure™</div>
+        <p class="article-modal-intro">Exception-handling SLAs are an overlooked governance tool that connect operational delays to financial risk, audit traceability, and capital efficiency. Defining override latency windows helps organizations identify hidden costs from delayed decisions, improve audit readiness, and strengthen capital allocation.</p>
+        <div class="article-modal-section-title">From Operational Delay to Financial Exposure</div>
+        <p>Exception handling occurs when automated or standard processes face conditions outside set rules, requiring human intervention or further validation. The financial impact of these delays is not always obvious. Unresolved claims, paused transactions, or pending pricing decisions can each incur costs over time — postponing revenue recognition, increasing operational expenses, or heightening regulatory risk.</p>
+        <p>Treating latency only as an efficiency issue leads to underestimating its economic impact. When viewed as a governance factor, organizations connect decision timing to capital outcomes.</p>
+        <div class="article-modal-section-title">The Concept of Override Latency Windows</div>
+        <p>The override latency window refers to the time between identifying an exception and resolving it through an authorized decision. Structured SLAs for exception handling manage these windows by setting clear timeframes for resolution. More importantly, these SLAs act as proxies for financial discipline by limiting the duration of unresolved exposure.</p>
+        <div class="article-modal-section-title">Audit Readiness and Decision Traceability</div>
+        <p>Including latency metrics in audit trails improves traceability. Each exception is linked to a timeline showing when it was identified, how long it remained unresolved, and when it was resolved. This adds depth to governance reporting and helps auditors assess both the decisions made and their efficiency. In highly regulated industries, demonstrating timely exception resolution may lead to more favorable assessments of governance.</p>
+        <div class="article-modal-section-title">Capital Allocation and the Economics of Timing</div>
+        <p>Delayed decisions can tie up capital that could be used more productively. Clear and consistently met SLAs support more predictable cash flows and resource allocation. Reliable decision timelines improve financial planning and help align operations with strategic goals.</p>
+        <div class="article-modal-section-title">Toward a More Integrated View of Governance</div>
+        <p>Exception handling SLAs bridge the gap between operations and financial oversight. For CFOs, this is an opportunity to broaden financial governance. Including latency metrics in existing frameworks provides greater visibility into areas often seen as purely operational. When well integrated, they improve transparency, strengthen accountability, and support disciplined capital management.</p>
+        <div class="article-modal-copyright">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™ and all related terms are original works. Brief quotation with citation is allowed; any other use requires written permission. Trademark registration pending with the United States Patent and Trademark Office.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    // Fade-ins
+    const fiEls = document.querySelectorAll('.fi');
+    setTimeout(() => {
+      document.querySelectorAll('.hero .fi').forEach(el => el.classList.add('up'));
+    }, 120);
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    fiEls.forEach(el => { if (!el.closest('.hero')) io.observe(el); });
+
+    // Article modals
+    function openArticle(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeArticle(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+    document.querySelectorAll('.article-overlay').forEach(o => o.addEventListener('click', e => { if (e.target === o) closeArticle(o.id); }));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.article-overlay.open').forEach(el => closeArticle(el.id)); });
+  </script>
+
+</body>
+</html>

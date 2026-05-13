@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About AUREM PGI | Decision Infrastructure, Not Advisory</title>
+  <meta name="description" content="AUREM PGI is decision infrastructure built by Camille Christiana. Predictive governance converts compliance into capital discipline and measurable enterprise value.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/about.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="About AUREM PGI | Decision Infrastructure, Not Advisory">
+  <meta property="og:description" content="AUREM PGI is decision infrastructure built by Camille Christiana. Predictive governance converts compliance into capital discipline and measurable enterprise value.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/about.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About AUREM PGI | Decision Infrastructure, Not Advisory">
+  <meta name="twitter:description" content="AUREM PGI is decision infrastructure built by Camille Christiana. Predictive governance converts compliance into capital discipline and measurable enterprise value.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ─── About Page ───────────────────────────────────────── */
+
+    /* Full-page split layout */
+    .about-split {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      min-height: calc(100vh - var(--nav-h));
+      padding-top: var(--nav-h);
+    }
+
+    /* ── LEFT PANEL ── */
+    .about-left {
+      background: var(--white);
+      padding: 5rem 4.5rem 0 4.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .about-left h1 {
+      font-family: 'Barlow', sans-serif;
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--navy-deep);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-intro {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--g600);
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--g200);
+    }
+
+    /* OUR POSITION */
+    .our-position-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.85rem;
+    }
+
+    .our-position-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--g600);
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+    }
+
+    /* 3-Column numbered grid */
+    .about-three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      margin: 0 -4.5rem;
+      margin-bottom: 0;
+      position: relative;
+    }
+    .about-three-grid::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(196,162,77,0.10) 0%, transparent 70%),
+        linear-gradient(180deg, #0e1a40 0%, #090f28 55%, #04081a 100%);
+      z-index: 0;
+    }
+
+    .about-three-item {
+      background: transparent;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-three-icon {
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(196,162,77,0.35);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-three-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .about-three-num {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: rgba(196,162,77,0.3);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .about-three-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .about-three-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.75;
+    }
+
+    /* Closing Perspective */
+    .closing-perspective {
+      background: var(--gold);
+      padding: 2rem 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-top: auto;
+      margin-left: -4.5rem;
+      margin-right: -4.5rem;
+    }
+
+    .closing-icon {
+      width: 44px;
+      height: 44px;
+      border: 1.5px solid rgba(8,16,42,0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .closing-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--navy-deep);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .closing-text-wrap {}
+
+    .closing-label {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--navy-deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .closing-body {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: rgba(8,16,42,0.75);
+      line-height: 1.8;
+    }
+
+    /* ── RIGHT PANEL ── */
+    .about-right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border-left: 1px solid var(--g200);
+    }
+
+    .about-photo {
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+      height: 520px;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+    }
+
+    /* Photo overlay removed — not needed with contain layout */
+    .about-photo::after { display: none; }
+
+    /* Quote card */
+    .about-quote-card {
+      background: var(--white);
+      border-top: 3px solid var(--gold);
+      padding: 2rem 2.25rem;
+      position: relative;
+      box-shadow: 0 -4px 20px rgba(12,23,56,0.06);
+    }
+
+    .about-quote-marks {
+      font-family: 'Barlow', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 0.8;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .about-quote-text {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--navy-deep);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-quote-name {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy-deep);
+      margin-bottom: 0.15rem;
+    }
+
+    .about-quote-role {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .about-quote-tm {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.58rem;
+      color: var(--g400);
+      line-height: 1.6;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    /* CTA */
+    .about-cta {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixid=M3w5MjUzMzZ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2VudGVyJTIwc2VydmVyJTIwcm9vbSUyMGRhcmt8ZW58MHwwfHx8MTc3NzY3OTQzM3ww&ixlib=rb-4.1.0&w=1600&h=600&fit=crop&auto=format&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 3rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .about-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(8,16,42,0.88) 0%,
+        rgba(12,23,56,0.82) 50%,
+        rgba(8,16,42,0.90) 100%
+      );
+      z-index: 0;
+    }
+    .about-cta > * { position: relative; z-index: 1; }
+
+    .about-cta h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      color: var(--white);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.55;
+    }
+
+    .about-cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .about-split { grid-template-columns: 1fr; }
+      .about-left { padding: 4rem 3rem 0 3rem; }
+      .closing-perspective { padding: 2rem 3rem; }
+      .about-right { min-height: 520px; }
+      .about-photo { min-height: 400px; }
+    }
+
+    @media (max-width: 768px) {
+      .about-left { padding: 3.5rem 1.5rem 0 1.5rem; }
+      .closing-perspective { padding: 1.75rem 1.5rem; flex-direction: column; gap: 1rem; margin-left: -1.5rem; margin-right: -1.5rem; }
+      .about-three-grid { grid-template-columns: 1fr; margin-left: -1.5rem; margin-right: -1.5rem; }
+      .about-cta { padding: 4rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html">Governance</a>
+            <a href="risk.html">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li>
+        <li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a>
+    <a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a>
+    <a href="finance.html" class="mob-sub">Finance</a>
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a>
+    <a href="business-forum.html">Business Forum</a>
+    <a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+
+  <!-- Split Layout -->
+  <section class="about-split">
+
+    <!-- ── LEFT ── -->
+    <div class="about-left">
+
+      <div class="about-eyebrow">About AUREM PGI</div>
+
+      <h1>Decision Infrastructure.<br>Not Advisory.</h1>
+
+      <p class="about-intro">AUREM PGI defines a new category, Predictive Governance Infrastructure, where decision systems are governed as financial control environments, not advisory functions.</p>
+      <p class="about-intro" style="border-top:1px solid var(--g200);padding-top:1.5rem;margin-top:0;">AUREM PGI is decision infrastructure. Its role is to ensure enterprise activity results in validated value, risk is visible before it materializes, and leadership decisions are based on clarity rather than assumption.</p>
+
+      <div class="our-position-label">Our Position</div>
+      <p class="our-position-text">AUREM PGI ensures enterprise activity results in validated value and visible risk. Leadership decisions are based on clarity rather than assumption. Organizations adopting this approach move beyond fragmented initiatives to a disciplined, measurable, and resilient operating model.</p>
+
+      <!-- 3-Column Grid -->
+      <div class="about-three-grid">
+        <div class="about-three-item">
+          <div class="about-three-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="about-three-num">01</div>
+          <div class="about-three-title">Authoritative</div>
+          <div class="about-three-desc">Every statement is earned. Positions are declared, not suggested. Authority is demonstrated through precision, not volume.</div>
+        </div>
+        <div class="about-three-item">
+          <div class="about-three-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <div class="about-three-num">02</div>
+          <div class="about-three-title">Innovative</div>
+          <div class="about-three-desc">Original frameworks and vocabulary define a new category. Predictive Governance Infrastructure names what did not previously have a name.</div>
+        </div>
+        <div class="about-three-item">
+          <div class="about-three-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <div class="about-three-num">03</div>
+          <div class="about-three-title">Revolutionary</div>
+          <div class="about-three-desc">Compliance as cost center is replaced by governance as margin protection. Governance becomes a driver of enterprise value creation.</div>
+        </div>
+      </div>
+
+      <!-- Closing Perspective -->
+      <div class="closing-perspective">
+        <div class="closing-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>
+        </div>
+        <div class="closing-text-wrap">
+          <div class="closing-label">Closing Perspective</div>
+          <p class="closing-body">In environments where decisions are made rapidly and at scale, governance determines whether value is created, preserved, or lost. AUREM PGI provides the structure that ensures decisions withstand scrutiny and outcomes deliver sustained performance.</p>
+        </div>
+      </div>
+
+    </div><!-- /about-left -->
+
+    <!-- ── RIGHT ── -->
+    <div class="about-right">
+      <div class="about-photo">
+        <img src="camille-headshot.jpeg" alt="Camille Christiana, Founder of AUREM PGI">
+      </div>
+      <div class="about-quote-card">
+        <span class="about-quote-marks">&ldquo;&rdquo;</span>
+        <p class="about-quote-text">Decisions are made quickly. Value is realized slowly. Governance determines the difference.</p>
+        <div class="about-quote-name">Camille Christiana</div>
+        <div class="about-quote-role">Founder &nbsp;&middot;&nbsp; AUREM Predictive Governance Infrastructure™</div>
+        <div class="about-quote-tm">AUREM Predictive Governance Infrastructure™ is an original body of work by Camille Christiana. Trademark registration pending.</div>
+      </div>
+    </div><!-- /about-right -->
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <h2 class="fi">Governance determines how decisions translate into financial outcomes. AUREM PGI structures that translation with precision.</h2>
+    <div class="about-cta-btns fi d1">
+      <a href="case-studies.html" class="btn-primary">Case Studies / Pilot Implementations</a>
+      <a href="business-forum.html" class="btn-primary" style="background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 2px 0 #050d24,0 4px 12px rgba(8,16,42,0.35);">Business Forum</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-transparent.png" alt="AUREM PGI">
+          <div class="footer-tagline">Converting Foresight into Governed Performance</div>
+          <div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="business-forum.html">Business Forum</a>
+          <a href="case-studies.html">Case Studies / Pilot Implementations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="governance.html">Governance</a>
+          <a href="risk.html">Risk</a>
+          <a href="ai-automation.html">AI &amp; Automation</a>
+          <a href="finance.html">Finance</a>
+          <a href="strategy.html">Strategy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a>
+          <a href="contact.html">Request Access</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleNav() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links > li > button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var li = this.closest('li');
+        var isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) li.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

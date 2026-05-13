@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Management &amp; Governance Articles | AUREM PGI</title>
+  <meta name="description" content="Enterprise risk as a quantifiable, governable dimension of capital allocation. Predictive exposure mapping, threshold governance, and risk as a managed asset.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/risk.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="Risk Management &amp; Governance Articles | AUREM PGI">
+  <meta property="og:description" content="Enterprise risk as a quantifiable, governable dimension of capital allocation. Predictive exposure mapping, threshold governance, and risk as a managed asset.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/risk.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Risk Management &amp; Governance Articles | AUREM PGI">
+  <meta name="twitter:description" content="Enterprise risk as a quantifiable, governable dimension of capital allocation. Predictive exposure mapping, threshold governance, and risk as a managed asset.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .cat-intro { padding: 5rem 3rem 6rem; background: var(--white); }
+    .cat-intro-inner { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    .cat-intro-left h2 { font-size: clamp(1.7rem, 2.6vw, 2.8rem); font-weight: 500; text-transform: none; letter-spacing: -0.02em; color: var(--navy); margin: 0.75rem 0 1.5rem; }
+    .cat-intro-left p { font-family: 'Inter',sans-serif; font-size: 1rem; color: var(--g600); line-height: 1.85; margin-bottom: 1.25rem; }
+    .key-topic { display: flex; align-items: center; gap: 1rem; font-family: 'Inter',sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--navy); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+    .key-topic::before { content: ''; display: block; width: 20px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .cat-articles { padding: 0 3rem 7rem; background: var(--white); }
+    .cat-articles-inner { max-width: 1440px; margin: 0 auto; }
+    .cat-articles-header { padding-bottom: 2.5rem; border-bottom: 1px solid var(--g200); margin-bottom: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .cat-articles-header h2 { font-size: clamp(1.7rem, 2.6vw, 2.8rem); font-weight: 500; text-transform: none; letter-spacing: -0.01em; color: var(--navy); }
+    .cat-count { font-family: 'Inter',sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--g400); }
+    .cat-cta { position: relative; background-image: url('https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&w=1600&h=600&fit=crop&auto=format&q=80'); background-size: cover; background-position: center; padding: 5rem 3rem; text-align: center; overflow: hidden; }
+    .cat-cta::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(8,16,42,0.88) 0%, rgba(12,23,56,0.82) 50%, rgba(8,16,42,0.90) 100%); z-index: 0; }
+    .cat-cta > * { position: relative; z-index: 1; }
+    .cat-cta h2 { font-size: clamp(1.7rem, 2.6vw, 2.8rem); font-weight: 500; color: var(--white); max-width: 560px; margin: 0 auto 2rem; line-height: 1.5; }
+    .soon-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .soon-card { background: var(--g50); border: 1px dashed var(--g200); padding: 2.5rem 2rem; min-height: 220px; display: flex; flex-direction: column; justify-content: center; }
+    .soon-card-cat { font-family: 'Inter',sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+    .soon-card-title { font-family: 'Barlow',sans-serif; font-size: 1rem; font-weight: 700; color: var(--g400); margin-bottom: 0.5rem; }
+    .soon-card-label { font-family: 'Inter',sans-serif; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--g200); }
+    @media (max-width:1100px) { .cat-intro-inner { grid-template-columns: 1fr; gap: 3rem; } .soon-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width:768px) { .cat-intro,.cat-articles { padding: 4rem 1.5rem; } .soon-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html">Governance</a>
+            <a href="risk.html" class="active">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            
+
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li><li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a><a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a><a href="finance.html" class="mob-sub">Finance</a>
+    
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a><a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-eyebrow fi">Business Forum &nbsp;·&nbsp; Category</div>
+    <h1 class="fi d1">Risk</h1>
+    <p class="fi d2">Enterprise risk as a quantifiable, governable dimension of capital allocation. Predictive exposure mapping, threshold governance, and the architecture of risk as a managed asset.</p>
+  </section>
+
+  <section class="cat-intro">
+    <div class="cat-intro-inner">
+      <div class="cat-intro-left fi">
+        <div class="section-label">What This Category Covers</div>
+        <h2>Risk as Governed Capital Exposure</h2>
+        <p>Enterprise risk management has long existed as a discipline parallel to governance, operating its own frameworks, committees, and reporting structures. AUREM PGI challenges this separation. Risk exposure is a capital consequence, and capital consequences require governance infrastructure, not advisory frameworks.</p>
+        <p>This category addresses how organizations can quantify, threshold, and govern risk as a continuous capital variable, enabling leaders to act before exposure escalates into liability.</p>
+      </div>
+      <div class="fi d1">
+        <div class="section-label">Key Topics</div>
+        <div class="key-topic">Capital Exposure Mapping</div>
+        <div class="key-topic">Risk Threshold Architecture</div>
+        <div class="key-topic">Predictive Risk Signaling</div>
+        <div class="key-topic">Regulatory Risk Governance</div>
+        <div class="key-topic">Operational Risk as Financial Variable</div>
+        <div class="key-topic">Enterprise Risk Infrastructure</div>
+        <a href="business-forum.html" class="btn-primary" style="margin-top:2rem;">All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-articles">
+    <div class="cat-articles-inner">
+      <div class="cat-articles-header fi">
+        <h2>Articles</h2>
+        <span class="cat-count">Coming Soon</span>
+      </div>
+      <div class="soon-grid fi d1">
+        <div class="soon-card">
+          <div class="soon-card-cat">Risk</div>
+          <div class="soon-card-title">Capital Exposure Mapping: A Risk Governance Framework</div>
+          <div class="soon-card-label">In Development</div>
+        </div>
+        <div class="soon-card">
+          <div class="soon-card-cat">Risk</div>
+          <div class="soon-card-title">Predictive Risk Thresholds: Governing Before Escalation</div>
+          <div class="soon-card-label">In Development</div>
+        </div>
+        <div class="soon-card">
+          <div class="soon-card-cat">Risk</div>
+          <div class="soon-card-title">Regulatory Risk as a Governed Capital Variable</div>
+          <div class="soon-card-label">In Development</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-cta">
+    <h2 class="fi">Risk that is measured, governed, and converted into strategic advantage.</h2>
+    <a href="contact.html" class="btn-primary fi d1">Request Access</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="logo-transparent.png" alt="AUREM PGI"><div class="footer-tagline">Converting Foresight into Governed Performance</div><div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div></div>
+        <div class="footer-col"><div class="footer-col-title">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="solutions.html">Solutions</a><a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a><a href="contact.html">Contact Us</a></div>
+        <div class="footer-col"><div class="footer-col-title">Categories</div><a href="governance.html">Governance</a><a href="risk.html">Risk</a><a href="ai-automation.html">AI &amp; Automation</a><a href="finance.html">Finance</a><a href="data-analytics.html">Data Analytics</a><a href="strategy.html">Strategy</a></div>
+        <div class="footer-col"><div class="footer-col-title">Connect</div><a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a><a href="contact.html">Request Access</a><a href="https://www.facebook.com" target="_blank">Facebook</a><a href="https://www.instagram.com" target="_blank">Instagram</a><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social"><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg></a></div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    // nav-dropdown-toggle
+    document.querySelectorAll('.nav-links > li > button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var li = this.closest('li');
+        var isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) li.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+    });
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

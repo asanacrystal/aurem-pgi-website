@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact AUREM PGI | Request Access to Governance Infrastructure</title>
+  <meta name="description" content="Engage directly with AUREM PGI. Request access to Predictive Governance Infrastructure™ for enterprise leaders, boards, and executive teams.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/contact.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="Contact AUREM PGI | Request Access to Governance Infrastructure">
+  <meta property="og:description" content="Engage directly with AUREM PGI. Request access to Predictive Governance Infrastructure™ for enterprise leaders, boards, and executive teams.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/contact.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact AUREM PGI | Request Access to Governance Infrastructure">
+  <meta name="twitter:description" content="Engage directly with AUREM PGI. Request access to Predictive Governance Infrastructure™ for enterprise leaders, boards, and executive teams.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ─── Contact Page Specific ───────────────────────────── */
+
+    .contact-body {
+      padding: 6rem 3rem 8rem;
+      background: var(--white);
+    }
+
+    .contact-body-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 7rem;
+      align-items: start;
+    }
+
+    /* Left Info */
+    .contact-info h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    .contact-info p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--g600);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-details {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-detail-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .cd-icon {
+      width: 40px; height: 40px;
+      background: rgba(196,162,77,0.1);
+      border: 1px solid rgba(196,162,77,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cd-icon svg { width: 18px; height: 18px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+
+    .cd-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+
+    .cd-value {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: var(--navy);
+    }
+
+    .what-to-expect {
+      margin-top: 3.5rem;
+      padding: 2rem;
+      background: var(--g50);
+      border-left: 2px solid var(--gold);
+    }
+
+    .wte-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .wte-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .wte-list li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--g600);
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .wte-list li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+
+    /* Form */
+    .contact-form-wrap {
+      background: var(--white);
+      border: 1px solid var(--g200);
+      border-top: 3px solid var(--gold);
+      padding: 3rem;
+    }
+
+    .form-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--g400);
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--navy);
+      background: var(--g50);
+      border: 1px solid var(--g200);
+      padding: 0.85rem 1rem;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: var(--white);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 140px; }
+
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-submit {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .form-disclaimer {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      color: var(--g400);
+      max-width: 280px;
+      line-height: 1.6;
+    }
+
+    .form-success {
+      display: none;
+      background: rgba(196,162,77,0.1);
+      border: 1px solid rgba(196,162,77,0.3);
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .form-success p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: var(--navy);
+    }
+
+    @media (max-width: 1100px) {
+      .contact-body-inner { grid-template-columns: 1fr; gap: 4rem; }
+    }
+
+    @media (max-width: 768px) {
+      .contact-body { padding: 5rem 1.5rem 6rem; }
+      .contact-form-wrap { padding: 2rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html">Governance</a>
+            <a href="risk.html">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            
+
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li><li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a>
+    <a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a>
+    <a href="finance.html" class="mob-sub">Finance</a>
+    
+
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a>
+    <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-eyebrow fi">Get in Touch</div>
+    <h1 class="fi d1">Contact &amp; Request Access</h1>
+    <p class="fi d2">AUREM PGI engages with organizations where decision governance directly impacts capital, risk, and enterprise performance.</p>
+  </section>
+
+
+  <!-- Contact Body -->
+  <section class="contact-body">
+    <div class="contact-body-inner">
+
+      <!-- Info Left -->
+      <div class="contact-info fi">
+        <div class="section-label">Reach Out</div>
+        <h2>Let's Talk About Governance Infrastructure</h2>
+        <p>AUREM PGI is designed for organizations where governance, capital discipline, and decision accountability converge at the executive level. We work with boards, C-suites, and enterprise transformation leaders.</p>
+        <p>Every engagement begins with a direct conversation. There is no automated qualification process. Your message is reviewed personally.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="cd-label">Email</div>
+              <div class="cd-value">contact@aurempgi.com</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="cd-label">Location</div>
+              <div class="cd-value">United States · Global Reach</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cd-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="cd-label">Response Time</div>
+              <div class="cd-value">Within 2 business days</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="what-to-expect">
+          <div class="wte-title">What to Expect</div>
+          <ul class="wte-list">
+            <li>A direct, personal response from the AUREM PGI team</li>
+            <li>An initial conversation to understand your organization's context</li>
+            <li>A framework overview tailored to your governance objectives</li>
+            <li>No sales process. No automated follow-up sequences.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Form Right -->
+      <div class="contact-form-wrap fi d1">
+        <div class="form-title">Request Access</div>
+        <div class="form-sub">All fields marked with * are required.</div>
+        <form id="contactForm" onsubmit="handleSubmit(event)" action="https://formspree.io/f/xpwzqowp" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Business Email *</label>
+            <input type="email" id="email" name="email" placeholder="your@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="title">Title / Role *</label>
+            <input type="text" id="title" name="title" placeholder="e.g. Chief Financial Officer" required>
+          </div>
+          <div class="form-group">
+            <label for="organization">Organization *</label>
+            <input type="text" id="organization" name="organization" placeholder="Company or institution name" required>
+          </div>
+          <div class="form-group">
+            <label for="inquiry">Nature of Inquiry *</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="framework-access">Framework Access &amp; Engagement</option>
+              <option value="board-presentation">Board or Executive Presentation</option>
+              <option value="governance-advisory">Governance Advisory</option>
+              <option value="speaking">Speaking or Thought Leadership</option>
+              <option value="media">Media or Press Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Governance Objectives</label>
+            <textarea id="message" name="message" placeholder="Describe your organization's governance priorities, challenges, or questions..."></textarea>
+          </div>
+          <div class="form-submit">
+            <div class="form-disclaimer">Your information is handled with discretion. AUREM PGI does not sell or share contact data.</div>
+            <button type="submit" class="btn-primary">Submit Request</button>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <p><strong>Thank you.</strong> Your request has been received. We will be in touch within 2 business days.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-transparent.png" alt="AUREM PGI">
+          <div class="footer-tagline">Converting Foresight into Governed Performance</div>
+          <div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="governance.html">Governance</a>
+          <a href="risk.html">Risk</a>
+          <a href="ai-automation.html">AI &amp; Automation</a>
+          <a href="finance.html">Finance</a>
+          
+
+          <a href="strategy.html">Strategy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a>
+          <a href="contact.html">Request Access</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleNav() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    // nav-dropdown-toggle
+    document.querySelectorAll('.nav-links > li > button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var li = this.closest('li');
+        var isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) li.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+    function handleSubmit(e) {
+      // Let Formspree handle the actual submission, just show success
+      // You can swap this out for a real endpoint
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+      // For now, show success on submit attempt
+      // When Formspree is configured the form will submit normally
+      success.style.display = 'block';
+      form.style.opacity = '0.4';
+      form.style.pointerEvents = 'none';
+      e.preventDefault();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.vercel
+.claude/
+
+# Working files / not part of the website
+*.pdf
+*.pptx
+*.ppt
+pptx_extracted/
+camille_change_*.png
+site_page_*.png
+site-content.txt
+
+# Original headshot with spaces (website uses camille-headshot.jpeg)
+Camille Headshot.jpeg
+Camille bio.png
+link in bio.png
+Resume (1).pdf
+Sites I like.pdf
+Sunday May 2026 - Website updates.pdf
+Draft Website Draft - Resume, Website and Business Forum Blog.pptx
+Each Containers have the wording layouts.pptx
+

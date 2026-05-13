@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Articles | Decision Defensibility &amp; Board Accountability | AUREM PGI</title>
+  <meta name="description" content="Governance articles from AUREM PGI — decision defensibility, board-level accountability, capital discipline, and enterprise governance as performance infrastructure.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/governance.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="Governance Articles | Decision Defensibility &amp; Board Accountability | AUREM PGI">
+  <meta property="og:description" content="Governance articles from AUREM PGI — decision defensibility, board-level accountability, capital discipline, and enterprise governance as performance infrastructure.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/governance.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Governance Articles | Decision Defensibility &amp; Board Accountability | AUREM PGI">
+  <meta name="twitter:description" content="Governance articles from AUREM PGI — decision defensibility, board-level accountability, capital discipline, and enterprise governance as performance infrastructure.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ─── Category Page ───────────────────────────────────── */
+
+    .cat-intro {
+      padding: 5rem 3rem 6rem;
+      background: var(--white);
+    }
+
+    .cat-intro-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .cat-intro-left h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    .cat-intro-left p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--g600);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
+    .cat-key-topics {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .key-topic {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+    }
+
+    .key-topic::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* Articles Section */
+    .cat-articles {
+      padding: 0 3rem 7rem;
+      background: var(--white);
+    }
+
+    .cat-articles-inner { max-width: 1440px; margin: 0 auto; }
+
+    .cat-articles-header {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--g200);
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cat-articles-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    .cat-count {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--g400);
+    }
+
+    /* CTA */
+    .cat-cta {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&w=1600&h=600&fit=crop&auto=format&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 3rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .cat-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(8,16,42,0.88) 0%, rgba(12,23,56,0.82) 50%, rgba(8,16,42,0.90) 100%);
+      z-index: 0;
+    }
+    .cat-cta > * { position: relative; z-index: 1; }
+
+    .cat-cta h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      color: var(--white);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1100px) {
+      .cat-intro-inner { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    @media (max-width: 768px) {
+      .cat-intro, .cat-articles { padding: 4rem 1.5rem; }
+      .article-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html" class="active">Governance</a>
+            <a href="risk.html">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            
+
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li><li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a>
+    <a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a>
+    <a href="finance.html" class="mob-sub">Finance</a>
+    
+
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a>
+    <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-eyebrow fi">Business Forum &nbsp;·&nbsp; Category</div>
+    <h1 class="fi d1">Governance</h1>
+    <p class="fi d2">Decision defensibility, capital discipline, board-level accountability, and the architecture of governance as enterprise infrastructure, not oversight.</p>
+  </section>
+
+
+  <!-- Category Intro -->
+  <section class="cat-intro">
+    <div class="cat-intro-inner">
+      <div class="cat-intro-left fi">
+        <div class="section-label">What This Category Covers</div>
+        <h2>Governance at the Capital Frontier</h2>
+        <p>The Governance category explores how organizational decision-making can be structured, measured, and defended in financial terms. Traditional governance frameworks focus on procedural compliance. AUREM PGI reframes governance as a capital discipline, where every decision carries traceable consequences and measurable exposure.</p>
+        <p>Articles in this category address boards, CFOs, compliance leaders, and any executive who must ensure that decisions withstand regulatory, fiduciary, and financial scrutiny.</p>
+      </div>
+      <div class="cat-key-topics fi d1">
+        <div class="section-label">Key Topics</div>
+        <div class="key-topic">Decision Defensibility at Board Level</div>
+        <div class="key-topic">Capital-at-Stake (CtAS) Governors</div>
+        <div class="key-topic">Exception-Handling SLAs</div>
+        <div class="key-topic">Override Latency Windows</div>
+        <div class="key-topic">Governance as Margin Protection</div>
+        <div class="key-topic">Audit Traceability &amp; Decision Documentation</div>
+        <div class="key-topic">Policy-to-Capital Discipline</div>
+        <a href="business-forum.html" class="btn-primary" style="margin-top:2rem;">All Articles</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Articles -->
+  <section class="cat-articles">
+    <div class="cat-articles-inner">
+      <div class="cat-articles-header fi">
+        <h2>Published Articles</h2>
+        <span class="cat-count">2 Articles</span>
+      </div>
+      <div class="article-grid fi d1">
+
+        <div class="article-card">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1774186184398-1cc2da3d029e?ixlib=rb-4.1.0&w=800&h=400&fit=crop&auto=format&q=80" alt="Board Governance">
+          </div>
+          <div class="article-body">
+            <div class="article-cat">Governance</div>
+            <h3>Decision-Defensibility at Board Level: From Policy to Capital Discipline</h3>
+            <p>Governance linked to capital discipline, where decisions are evaluated for traceability, timing, and financial exposure at the board level.</p>
+            <div class="article-meta">April 16, 2026 &nbsp;·&nbsp; Camille Christiana</div>
+            <button class="btn-ghost" onclick="openArticle('article1')">Read Article</button>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-thumb">
+            <img src="https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?ixlib=rb-4.1.0&w=800&h=400&fit=crop&auto=format&q=80" alt="Data Analytics">
+          </div>
+          <div class="article-body">
+            <div class="article-cat">Governance</div>
+            <h3>Exception-Handling SLAs: The Hidden Governance KPI CFOs Overlook</h3>
+            <p>Override latency windows and exception-handling SLAs connect operational delays directly to financial risk and capital efficiency.</p>
+            <div class="article-meta">April 16, 2026 &nbsp;·&nbsp; Camille Christiana</div>
+            <button class="btn-ghost" onclick="openArticle('article2')">Read Article</button>
+          </div>
+        </div>
+
+        <div class="article-card" style="border-color:var(--g200);border-top-color:var(--g200);background:var(--g50);display:flex;align-items:center;justify-content:center;min-height:340px;">
+          <div style="text-align:center;padding:2rem;">
+            <div style="font-family:'Inter',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--g400);margin-bottom:0.75rem;">More Coming</div>
+            <div style="font-family:'Barlow',sans-serif;font-size:1rem;font-weight:700;color:var(--g400);">Additional Governance articles are in development.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cat-cta">
+    <h2 class="fi">Governance decisions that can be defended at every level.</h2>
+    <a href="contact.html" class="btn-primary fi d1">Request Access</a>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-transparent.png" alt="AUREM PGI">
+          <div class="footer-tagline">Converting Foresight into Governed Performance</div>
+          <div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="governance.html">Governance</a>
+          <a href="risk.html">Risk</a>
+          <a href="ai-automation.html">AI &amp; Automation</a>
+          <a href="finance.html">Finance</a>
+          
+
+          <a href="strategy.html">Strategy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a>
+          <a href="contact.html">Request Access</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Article Modals -->
+  <div class="article-overlay" id="article1">
+    <div class="article-modal">
+      <div class="article-modal-hero">
+        <img src="https://images.unsplash.com/photo-1774186184398-1cc2da3d029e?ixlib=rb-4.1.0&w=1200&h=500&fit=crop&auto=format&q=85" alt="Boardroom">
+        <div class="article-modal-hero-overlay"></div>
+        <img src="logo-transparent.png" alt="AUREM PGI" class="article-modal-hero-logo">
+        <button class="article-modal-close" onclick="closeArticle('article1')">&#x2715;</button>
+      </div>
+      <div class="article-modal-body">
+        <div class="article-modal-cat">Governance &nbsp;|&nbsp; April 16, 2026</div>
+        <h2 class="article-modal-title">Decision-Defensibility at Board Level: From Policy to Capital Discipline</h2>
+        <div class="article-modal-meta">By Camille Christiana &nbsp;|&nbsp; AUREM Predictive Governance Infrastructure™</div>
+        <p class="article-modal-intro">Boards have traditionally treated governance as a control function. This position reframes it: governance linked to capital discipline, where decisions are evaluated for traceability, timing, and financial exposure. The primary concern is now whether decisions based on policy can withstand financial scrutiny in practice.</p>
+        <div class="article-modal-section-title">Reframing Governance Through Financial Consequences</div>
+        <p>In many organizations, governance frameworks focus on procedural completeness: documenting policies, testing controls, and maintaining audit trails. However, these measures do not always ensure economically sound decisions. Policies may be followed precisely, yet financially adverse outcomes can still result from delays, misclassification, or unclear ownership.</p>
+        <p>This creates an asymmetry for boards: financial statements show outcomes, while governance systems often focus on process adherence. Decision defensibility metrics address this gap by aligning governance evaluation with financial outcomes — shifting focus to whether the decision can be justified in terms of capital exposure, timing, and accountability.</p>
+        <div class="article-modal-section-title">Decision Defensibility as a Measurable Construct</div>
+        <p>Three central dimensions emerge:</p>
+        <ul class="article-modal-list">
+          <li><strong>Traceability:</strong> links each decision to specific inputs, rules, and ownership.</li>
+          <li><strong>Timing:</strong> measures the delay between signal detection and decision execution, which can have direct financial effects.</li>
+          <li><strong>Exposure:</strong> quantifies the decision's potential or actual impact on capital, including cost, revenue, or risk.</li>
+        </ul>
+        <p>When these dimensions are applied, governance shifts from a retrospective control to a forward-looking financial tool. Decisions are evaluated in real time, considering their potential capital implications.</p>
+        <div class="article-modal-section-title">Capital at Stake Governors and the Logic of Thresholds</div>
+        <p>CtAS governors act as threshold mechanisms, classifying decisions by their potential capital impact. When a decision exceeds a set threshold, additional controls such as human review, escalation, or suspension may be triggered. This mirrors financial risk management practices that use exposure limits and stop-loss mechanisms to contain risk.</p>
+        <p>For boards, CtAS governors create a clearer link between governance and capital allocation, enabling oversight through ongoing monitoring of decision-level exposure — not just policy approval.</p>
+        <div class="article-modal-section-title">Observable Business Consequences</div>
+        <p>Exception handling queues often represent deferred decisions due to complexity or unclear ownership. A defensibility-based approach treats these queues as indicators of latent capital exposure. Metrics are developed to estimate the financial cost of delay, incorporating factors such as time, volume, and potential error rates. This allows leadership to prioritize interventions based on economic significance rather than purely operational criteria.</p>
+        <div class="article-modal-section-title">Toward Governance as a Margin Protection Mechanism</div>
+        <p>Shifting governance from a compliance cost center to a margin protection asset requires practical tools, metrics, and processes that embed financial discipline in decision-making. What appears increasingly evident is that governance cannot remain isolated from financial considerations. Boards may need to reconsider how governance is framed — recognizing its role in safeguarding enterprise value.</p>
+        <p>Governance should be seen not as an external constraint, but as an internal capability that helps organizations navigate uncertainty with precision and accountability.</p>
+        <div class="article-modal-copyright">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™ and all related terms are original works. Brief quotation with citation is allowed; any other use requires written permission. Trademark registration pending with the United States Patent and Trademark Office.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-overlay" id="article2">
+    <div class="article-modal">
+      <div class="article-modal-hero">
+        <img src="https://images.unsplash.com/photo-1774600122432-dfddc9987ff8?ixlib=rb-4.1.0&w=1200&h=500&fit=crop&auto=format&q=85" alt="Data Analytics">
+        <div class="article-modal-hero-overlay"></div>
+        <img src="logo-transparent.png" alt="AUREM PGI" class="article-modal-hero-logo">
+        <button class="article-modal-close" onclick="closeArticle('article2')">&#x2715;</button>
+      </div>
+      <div class="article-modal-body">
+        <div class="article-modal-cat">Governance &nbsp;|&nbsp; April 16, 2026</div>
+        <h2 class="article-modal-title">Exception-Handling SLAs: The Hidden Governance KPI CFOs Overlook</h2>
+        <div class="article-modal-meta">By Camille Christiana &nbsp;|&nbsp; AUREM Predictive Governance Infrastructure™</div>
+        <p class="article-modal-intro">Exception-handling SLAs are an overlooked governance tool that connect operational delays to financial risk, audit traceability, and capital efficiency. Defining override latency windows helps organizations identify hidden costs from delayed decisions, improve audit readiness, and strengthen capital allocation.</p>
+        <div class="article-modal-section-title">From Operational Delay to Financial Exposure</div>
+        <p>Exception handling occurs when automated or standard processes face conditions outside set rules, requiring human intervention or further validation. The financial impact of these delays is not always obvious. Unresolved claims, paused transactions, or pending pricing decisions can each incur costs over time — postponing revenue recognition, increasing operational expenses, or heightening regulatory risk.</p>
+        <p>Treating latency only as an efficiency issue leads to underestimating its economic impact. When viewed as a governance factor, organizations connect decision timing to capital outcomes.</p>
+        <div class="article-modal-section-title">The Concept of Override Latency Windows</div>
+        <p>The override latency window refers to the time between identifying an exception and resolving it through an authorized decision. Structured SLAs for exception handling manage these windows by setting clear timeframes for resolution. More importantly, these SLAs act as proxies for financial discipline by limiting the duration of unresolved exposure.</p>
+        <div class="article-modal-section-title">Audit Readiness and Decision Traceability</div>
+        <p>Including latency metrics in audit trails improves traceability. Each exception is linked to a timeline showing when it was identified, how long it remained unresolved, and when it was resolved. This adds depth to governance reporting and helps auditors assess both the decisions made and their efficiency. In highly regulated industries, demonstrating timely exception resolution may lead to more favorable assessments of governance.</p>
+        <div class="article-modal-section-title">Capital Allocation and the Economics of Timing</div>
+        <p>Delayed decisions can tie up capital that could be used more productively. Clear and consistently met SLAs support more predictable cash flows and resource allocation. Reliable decision timelines improve financial planning and help align operations with strategic goals.</p>
+        <div class="article-modal-section-title">Toward a More Integrated View of Governance</div>
+        <p>Exception handling SLAs bridge the gap between operations and financial oversight. For CFOs, this is an opportunity to broaden financial governance. Including latency metrics in existing frameworks provides greater visibility into areas often seen as purely operational. When well integrated, they improve transparency, strengthen accountability, and support disciplined capital management.</p>
+        <div class="article-modal-copyright">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™ and all related terms are original works. Brief quotation with citation is allowed; any other use requires written permission. Trademark registration pending with the United States Patent and Trademark Office.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleNav() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    // nav-dropdown-toggle
+    document.querySelectorAll('.nav-links > li > button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var li = this.closest('li');
+        var isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) li.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+    function openArticle(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeArticle(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+    document.querySelectorAll('.article-overlay').forEach(o => o.addEventListener('click', e => { if (e.target === o) closeArticle(o.id); }));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.article-overlay.open').forEach(el => closeArticle(el.id)); });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions | AUREM PGI Predictive Governance Framework</title>
+  <meta name="description" content="Explore AUREM PGI's four infrastructure pillars: Predictive Governance, Enterprise Trust Architecture, Strategic Clarity, and Sustained Value Creation.">
+  <link rel="canonical" href="https://aurem-pgi.vercel.app/solutions.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AUREM PGI">
+  <meta property="og:title" content="Solutions | AUREM PGI Predictive Governance Framework">
+  <meta property="og:description" content="Explore AUREM PGI's four infrastructure pillars: Predictive Governance, Enterprise Trust Architecture, Strategic Clarity, and Sustained Value Creation.">
+  <meta property="og:url" content="https://aurem-pgi.vercel.app/solutions.html">
+  <meta property="og:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Solutions | AUREM PGI Predictive Governance Framework">
+  <meta name="twitter:description" content="Explore AUREM PGI's four infrastructure pillars: Predictive Governance, Enterprise Trust Architecture, Strategic Clarity, and Sustained Value Creation.">
+  <meta name="twitter:image" content="https://aurem-pgi.vercel.app/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ─── Solutions Page Specific ─────────────────────────── */
+
+    /* Framework Intro */
+    .framework-intro {
+      padding: 7rem 3rem;
+      background: var(--white);
+    }
+
+    .framework-intro-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
+      align-items: center;
+    }
+
+    .framework-intro-left h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    .framework-intro-left p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--g600);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
+    .framework-intro-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .fw-point {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.5rem;
+      background: var(--g50);
+      border-left: 2px solid var(--gold);
+    }
+
+    .fw-point-num {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 2.5rem;
+    }
+
+    .fw-point-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    .fw-point p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: var(--g600);
+      line-height: 1.75;
+    }
+
+    /* Pillars Detail */
+    .pillars-detail {
+      padding: 7rem 3rem;
+      background: var(--white);
+    }
+
+    .pillars-detail-inner { max-width: 1440px; margin: 0 auto; }
+
+    .pillars-detail-header { margin-bottom: 4rem; }
+
+    .pillars-detail-header .section-label { color: var(--gold); }
+    .pillars-detail-header .section-label::before { background: var(--gold); }
+
+    .pillars-detail-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-top: 0.75rem;
+      max-width: 600px;
+    }
+
+    .pillars-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--g200);
+    }
+
+    .pd-block {
+      background: var(--white);
+      padding: 3.5rem 3rem;
+      border-top: 2px solid transparent;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .pd-block:hover { border-color: var(--gold); background: rgba(196,162,77,0.03); }
+
+    .pd-num {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .pd-block h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: 0.04em;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .pd-block p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: var(--g600);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .pd-capabilities {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .pd-capabilities li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      color: var(--g600);
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .pd-capabilities li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+
+    /* Who It Serves */
+    .serves {
+      padding: 7rem 3rem;
+      background: var(--g50);
+    }
+
+    .serves-inner { max-width: 1440px; margin: 0 auto; }
+
+    .serves-header { text-align: center; margin-bottom: 4rem; }
+
+    .serves-header h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      margin-top: 0.75rem;
+    }
+
+    .serves-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .serve-card {
+      background: var(--white);
+      border: 1px solid var(--g200);
+      padding: 2.5rem 2rem;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .serve-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(12,23,56,0.08); }
+
+    .serve-icon {
+      width: 44px; height: 44px;
+      background: rgba(196,162,77,0.1);
+      border: 1px solid rgba(196,162,77,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .serve-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+
+    .serve-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .serve-card p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: var(--g600);
+      line-height: 1.75;
+    }
+
+    /* Methodology */
+    .methodology {
+      padding: 7rem 3rem;
+      background: var(--white);
+      border-top: 1px solid var(--g200);
+    }
+
+    .methodology-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .method-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+
+    .method-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px; left: 0; right: 0;
+      height: 1px;
+      background: var(--g200);
+      z-index: 0;
+    }
+
+    .method-step {
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .method-dot {
+      width: 56px; height: 56px;
+      background: var(--white);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    .method-step h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .method-step p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--g600);
+      line-height: 1.75;
+    }
+
+    /* Highlight text */
+    .fw-highlight {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--navy);
+      border-left: 2px solid var(--gold);
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+      line-height: 1.6;
+    }
+
+    /* Commitments Strip */
+    .solutions-commitments {
+      background: var(--navy-deep);
+      padding: 3rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .solutions-commitments-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .sol-commit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .sol-commit-icon svg {
+      width: 22px; height: 22px;
+      stroke: var(--gold); fill: none;
+      margin-bottom: 0.25rem;
+    }
+
+    .sol-commit-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--white);
+    }
+
+    .sol-commit-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.65;
+    }
+
+    /* Solutions page hero override */
+    .page-hero {
+      background-image: url('https://images.unsplash.com/photo-1667264501379-c1537934c7ab?ixlib=rb-4.1.0&w=1600&h=800&fit=crop&auto=format&q=80') !important;
+      background-size: cover !important;
+      background-position: center !important;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(8,16,42,0.85) 0%, rgba(12,23,56,0.78) 60%, rgba(8,16,42,0.88) 100%);
+      z-index: 0;
+    }
+    .page-hero > * { position: relative; z-index: 1; }
+
+    /* Solutions CTA */
+    .solutions-cta {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&w=1600&h=600&fit=crop&auto=format&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 3rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .solutions-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(8,16,42,0.88) 0%, rgba(12,23,56,0.82) 50%, rgba(8,16,42,0.90) 100%);
+      z-index: 0;
+    }
+    .solutions-cta > * { position: relative; z-index: 1; }
+
+    .solutions-cta h2 {
+      font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+      font-weight: 500;
+      color: var(--white);
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      line-height: 1.5;
+    }
+
+    .solutions-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 1100px) {
+      .framework-intro-inner { grid-template-columns: 1fr; gap: 4rem; }
+      .pillars-detail-grid { grid-template-columns: 1fr; }
+      .serves-grid { grid-template-columns: 1fr 1fr; }
+      .method-steps { grid-template-columns: 1fr 1fr; }
+      .method-steps::before { display: none; }
+      .solutions-commitments-inner { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .framework-intro, .pillars-detail, .serves, .methodology { padding: 5rem 1.5rem; }
+      .serves-grid { grid-template-columns: 1fr; }
+      .method-steps { grid-template-columns: 1fr; }
+      .solutions-commitments { padding: 2.5rem 1.5rem; }
+      .solutions-commitments-inner { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo-transparent.png" alt="AUREM PGI"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions.html" class="active">Solutions</a></li>
+        <li>
+          <button>Categories <span class="nav-arrow"></span></button>
+          <div class="nav-dropdown">
+            <a href="governance.html">Governance</a>
+            <a href="risk.html">Risk</a>
+            <a href="ai-automation.html">AI &amp; Automation</a>
+            <a href="finance.html">Finance</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="data-analytics.html">Data Analytics</a>
+            <a href="strategy.html">Strategy</a>
+          </div>
+        </li>
+        <li><a href="business-forum.html">Business Forum</a></li><li><a href="case-studies.html">Case Studies / Pilot Implementations</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <span class="mob-cat">Categories</span>
+    <a href="governance.html" class="mob-sub">Governance</a>
+    <a href="risk.html" class="mob-sub">Risk</a>
+    <a href="ai-automation.html" class="mob-sub">AI &amp; Automation</a>
+    <a href="finance.html" class="mob-sub">Finance</a>
+    <a href="leadership.html" class="mob-sub">Leadership</a>
+    <a href="data-analytics.html" class="mob-sub">Data Analytics</a>
+    <a href="strategy.html" class="mob-sub">Strategy</a>
+    <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+    <a href="contact.html" class="m-cta">Contact Us</a>
+  </div>
+
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-eyebrow fi">The Framework</div>
+    <h1 class="fi d1">Predictive Governance Infrastructure™</h1>
+    <p class="fi d2">A structured system that converts governance from a compliance cost center into a precision instrument for capital discipline, strategic clarity, and sustained enterprise performance. It ensures that decision activity is continuously aligned with capital exposure, timing discipline, and financial accountability.</p>
+  </section>
+
+
+  <!-- What We Do -->
+  <section class="framework-intro">
+    <div class="framework-intro-inner">
+      <div class="framework-intro-left fi">
+        <div class="section-label">What We Do</div>
+        <h2>Decision Infrastructure at Scale</h2>
+        <p>AUREM PGI delivers disciplined decision governance. Leaders maintain a clear line of sight from decision to financial outcomes. Risk is assessed in terms of capital exposure. Priorities are set based on measurable value. Governance operates continuously within execution, not after the fact.</p>
+        <p class="fw-highlight">Every workflow tied to capital at stake. Leadership sees margin, not throughput.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
+          <a href="case-studies.html" class="btn-primary">Request Access Case Studies /&nbsp;Pilot&nbsp;Implementations</a>
+          <a href="business-forum.html" class="btn-outline">Business Forum</a>
+        </div>
+      </div>
+      <div class="framework-intro-right fi d1">
+        <div class="fw-point">
+          <div class="fw-point-num">01</div>
+          <div>
+            <div class="fw-point-title">Clarity at the Point of Decision</div>
+            <p>Renewed intelligence. Contextualized. Actionable. Decisions made with precision.</p>
+          </div>
+        </div>
+        <div class="fw-point">
+          <div class="fw-point-num">02</div>
+          <div>
+            <div class="fw-point-title">Risk Visible Before It Materializes</div>
+            <p>Forward-looking risk signals. Capital exposure quantified. Surprises reduced.</p>
+          </div>
+        </div>
+        <div class="fw-point">
+          <div class="fw-point-num">03</div>
+          <div>
+            <div class="fw-point-title">Value Validated, Not Assumed</div>
+            <p>Outcomes measured. Value evidence-based. Confidence earned.</p>
+          </div>
+        </div>
+        <div class="fw-point">
+          <div class="fw-point-num">04</div>
+          <div>
+            <div class="fw-point-title">Shift from Reactive Management to Predictive Control</div>
+            <p>Proactive governance by design. Continuous monitoring. Control embedded in execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Commitments Strip -->
+  <div class="solutions-commitments fi">
+    <div class="solutions-commitments-inner">
+      <div class="sol-commit-item">
+        <div class="sol-commit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="sol-commit-title">Decisions with Integrity</div>
+        <div class="sol-commit-desc">Complete traceability. Audit-ready. Defensible at every level.</div>
+      </div>
+      <div class="sol-commit-item">
+        <div class="sol-commit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+        </div>
+        <div class="sol-commit-title">Capital Discipline</div>
+        <div class="sol-commit-desc">Every decision evaluated through a capital lens.</div>
+      </div>
+      <div class="sol-commit-item">
+        <div class="sol-commit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="sol-commit-title">Enterprise Alignment</div>
+        <div class="sol-commit-desc">Unified governance narrative. Consistent execution.</div>
+      </div>
+      <div class="sol-commit-item">
+        <div class="sol-commit-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><path d="M3 20h18"/></svg>
+        </div>
+        <div class="sol-commit-title">Measurable Impact</div>
+        <div class="sol-commit-desc">Improved results. Sustained risk management. Sustained enterprise value.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Four Pillars Detail -->
+  <section class="pillars-detail">
+    <div class="pillars-detail-inner">
+      <div class="pillars-detail-header">
+        <div class="section-label fi">Architecture</div>
+        <h2 class="fi d1">Execution Architecture Supporting Financial Governance</h2>
+        <p class="fi d2" style="font-family:'Inter',sans-serif;font-size:1rem;color:rgba(255,255,255,0.6);max-width:640px;line-height:1.8;margin-top:1rem;">These components operationalize the three core principles across enterprise systems.</p>
+      </div>
+      <div class="pillars-detail-grid">
+        <div class="pd-block fi">
+          <div class="pd-num">01</div>
+          <h3>Predictive Governance</h3>
+          <p>Anticipate risk, compliance triggers, and governance requirements before they materialize as liabilities. Governance that operates forward, not backward.</p>
+          <ul class="pd-capabilities">
+            <li>Real-time compliance signal monitoring</li>
+            <li>Regulatory change impact forecasting</li>
+            <li>Board-level decision defensibility metrics</li>
+            <li>Pre-emptive control activation protocols</li>
+          </ul>
+        </div>
+        <div class="pd-block fi d1">
+          <div class="pd-num">02</div>
+          <h3>Enterprise Trust Architecture</h3>
+          <p>Create structural integrity across systems, data flows, and decision chains. Accountability is embedded in the infrastructure, not enforced through policy alone.</p>
+          <ul class="pd-capabilities">
+            <li>Decision-to-outcome traceability chains</li>
+            <li>Cross-functional accountability mapping</li>
+            <li>Audit-ready governance evidence generation</li>
+            <li>Trust infrastructure for AI-driven processes</li>
+          </ul>
+        </div>
+        <div class="pd-block fi d2">
+          <div class="pd-num">03</div>
+          <h3>Strategic Clarity Engine</h3>
+          <p>Convert operational complexity into actionable, financially anchored insight. Leaders see margin and risk simultaneously, not sequentially.</p>
+          <ul class="pd-capabilities">
+            <li>Value-identification frameworks</li>
+            <li>Initiative-to-capital alignment mapping</li>
+            <li>Executive decision dashboards</li>
+            <li>Transformation ROI validation models</li>
+          </ul>
+        </div>
+        <div class="pd-block fi d3">
+          <div class="pd-num">04</div>
+          <h3>Sustained Value Infrastructure</h3>
+          <p>Build governance that compounds enterprise value over time. Not a reporting layer. A resilient performance infrastructure designed to scale.</p>
+          <ul class="pd-capabilities">
+            <li>Long-term capital preservation modeling</li>
+            <li>Governance maturity benchmarking</li>
+            <li>Enterprise resilience scoring</li>
+            <li>Value protection through organizational change</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Who It Serves -->
+  <section class="serves">
+    <div class="serves-inner">
+      <div class="serves-header">
+        <div class="section-label fi">Designed For</div>
+        <h2 class="fi d1">The Leaders AUREM PGI Serves</h2>
+      </div>
+      <div class="serves-grid">
+        <div class="serve-card fi">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <h3>Boards of Directors</h3>
+          <p>Fiduciary accountability requires defensible decisions. AUREM PGI provides the governance infrastructure to ensure board-level decisions carry traceable capital justification. Furthermore, the structure provides visibility into how decisions align with capital risk and financial accountability.</p>
+        </div>
+        <div class="serve-card fi d1">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+          </div>
+          <h3>Chief Financial Officers</h3>
+          <p>Connect governance activity directly to capital outcomes. Exception-handling SLAs, latency metrics, and CtAS governors which enables CFOs to translate operational decision activity into measurable financial exposure and capital discipline.</p>
+        </div>
+        <div class="serve-card fi d2">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Chief Operating Officers</h3>
+          <p>Operational decisions carry latent capital exposure. AUREM PGI quantifies that exposure and embeds accountability into operational governance processes.</p>
+        </div>
+        <div class="serve-card fi d3">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Transformation Leaders</h3>
+          <p>Large-scale initiatives require structured value validation. AUREM PGI ensures transformation programs produce measurable, governed outcomes, not advisory reports.</p>
+        </div>
+        <div class="serve-card fi d4">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Compliance &amp; Risk Officers</h3>
+          <p>Move beyond retroactive compliance monitoring. AUREM PGI embeds predictive risk signals into governance infrastructure, enabling proactive intervention before exposure escalates.</p>
+        </div>
+        <div class="serve-card fi d4">
+          <div class="serve-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <h3>Enterprise Architects</h3>
+          <p>Governance infrastructure must be engineered, not imposed. AUREM PGI provides the architecture patterns to embed governed intelligence into existing enterprise systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Methodology -->
+  <section class="methodology">
+    <div class="methodology-inner">
+      <div class="section-label fi">How It Works</div>
+      <h2 class="fi d1" style="font-size:clamp(1.7rem,2.6vw,2.8rem);font-weight:500;text-transform:none;letter-spacing:-0.01em;color:var(--navy);margin-top:0.75rem;">The AUREM PGI Methodology</h2>
+      <div class="method-steps">
+        <div class="method-step fi">
+          <div class="method-dot">01</div>
+          <h4>Identify</h4>
+          <p>Map all significant decision nodes, capital thresholds, and accountability gaps across the enterprise governance structure.</p>
+        </div>
+        <div class="method-step fi d1">
+          <div class="method-dot">02</div>
+          <h4>Quantify</h4>
+          <p>Assign financial consequence metrics to each governance layer: latency costs, exposure windows, and capital-at-stake values.</p>
+        </div>
+        <div class="method-step fi d2">
+          <div class="method-dot">03</div>
+          <h4>Govern</h4>
+          <p>Activate predictive controls, escalation protocols, and SLA frameworks that manage decisions before consequences compound.</p>
+        </div>
+        <div class="method-step fi d3">
+          <div class="method-dot">04</div>
+          <h4>Scale</h4>
+          <p>Build governance infrastructure that grows with the organization, preserving performance integrity across market, regulatory, and structural change.</p>
+        </div>
+      </div>
+      <p class="fi" style="font-family:'Barlow',sans-serif;font-size:1rem;font-style:italic;font-weight:600;color:var(--navy);margin-top:3rem;border-left:2px solid var(--gold);padding-left:1rem;line-height:1.6;">Each stage ensures decisions are governed through financial exposure, timing discipline, and accountability structures.</p>
+    </div>
+  </section>
+
+
+  <!-- Solutions CTA -->
+  <section class="solutions-cta">
+    <h2 class="fi">Ready to convert governance into measurable enterprise value?</h2>
+    <div class="solutions-cta-btns fi d1">
+      <a href="contact.html" class="btn-primary">Request Access</a>
+      <a href="business-forum.html" class="btn-outline">Read the Business Forum</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-transparent.png" alt="AUREM PGI">
+          <div class="footer-tagline">Converting Foresight into Governed Performance</div>
+          <div class="footer-desc">AUREM PGI is structured on three financial governance principles:<ul class="footer-list"><li>Capital at Stake</li><li>Latency Exposure</li><li>Decision Defensibility</li></ul>These define how decisions are prioritized, timed, and justified at scale.</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="business-forum.html">Business Forum</a><a href="case-studies.html">Case Studies / Pilot Implementations</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Categories</div>
+          <a href="governance.html">Governance</a>
+          <a href="risk.html">Risk</a>
+          <a href="ai-automation.html">AI &amp; Automation</a>
+          <a href="finance.html">Finance</a>
+          
+
+          <a href="strategy.html">Strategy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a href="https://camillechristiana.com" rel="author" target="_blank">Camille Christiana</a>
+          <a href="contact.html">Request Access</a>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Camille Christiana. AUREM Predictive Governance Infrastructure™. All rights reserved. Trademark registration pending with the United States Patent and Trademark Office.</div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke="currentColor"/></svg>
+          </a>
+        </div>
+      <div class="footer-credit">Website created by <a href="https://innovatoredge.com" target="_blank">Innovator Edge</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleNav() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    // nav-dropdown-toggle
+    document.querySelectorAll('.nav-links > li > button').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var li = this.closest('li');
+        var isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+        if (!isOpen) li.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.nav-links > li').forEach(function(el) { el.classList.remove('open'); });
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
